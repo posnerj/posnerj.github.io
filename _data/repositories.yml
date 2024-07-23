@@ -4,6 +4,6 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - https://github.com/projectwagomu/apgas
-  - https://github.com/projectwagomu/lifelineglb
-  - https://github.com/projectwagomu/ElasticJobScheduler
+  - projectwagomu/apgas
+  - projectwagomu/lifelineglb
+  - projectwagomu/ElasticJobScheduler
