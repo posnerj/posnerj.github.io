@@ -2,19 +2,44 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: publications by categories in reversed chronological order.
-nav: true
-nav_order: 3
+description: Publications by categories in reversed chronological order.
+sections:
+  - bibquery: "@article"
+    text: "Journal Articles"
+  - bibquery: "@phdthesis|@mastersthesis"
+    text: "Dissertation"    
+  - bibquery: "@inproceedings"
+    text: "Conference and Workshop Articles"
+  - bibquery: "@misc"
+    text: "Posters"
+    social: true
+    nav: true
+    nav_order: 4
 ---
-
-<!-- _pages/publications.md -->
-
-<!-- Bibsearch Feature -->
-
-{% include bib_search.liquid %}
 
 <div class="publications">
 
-{% bibliography %}
+{%- for section in page.sections %}
+<a id="{{section.text}}"></a>
+  <p class="bibtitle">{{section.text}}</p>
+  {%- for y in page.years %}
+
+    {%- comment -%}  Count bibliography in actual section and year {%- endcomment -%}
+    {%- capture citecount -%}
+    {%- bibliography_count -f {{site.scholar.bibliography}} -q {{section.bibquery}}[year={{y}}] -%}
+    {%- endcapture -%}
+
+    {%- comment -%} If exist bibliography in actual section and year, print {%- endcomment -%}
+    {%- if citecount !="0" %}
+
+      <h2 class="year">{{y}}</h2>
+      {% bibliography -f {{site.scholar.bibliography}} -q {{section.bibquery}}[year={{y}}] %}
+
+    {%- endif -%}
+
+{%- endfor %}
+
+{%- endfor %}
 
 </div>
+
