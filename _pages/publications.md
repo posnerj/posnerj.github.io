@@ -12,6 +12,7 @@ sections:
     text: "Conference and Workshop Articles"
   - bibquery: "@misc"
     text: "Posters"
+    years: [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017]
     social: true
     nav: true
     nav_order: 4
@@ -42,4 +43,3 @@ sections:
 {%- endfor %}
 
 </div>
-
