@@ -150,7 +150,7 @@
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'conference' %}
       {% capture entrytype %}<em>At {{ entry.booktitle }}</em>{% endcapture %}
-    {% if entry.type == 'article' %}
+    {% elsif entry.type == 'article' %}
       {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
