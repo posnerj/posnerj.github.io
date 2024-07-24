@@ -10,7 +10,7 @@ sections:
     text: "Dissertation"
   - bibquery: "@inproceedings"
     text: "Conference and Workshop Articles"
-  - bibquery: "@misc"
+  - bibquery: "@conference"
     text: "Posters"
 years: [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017]
 social: true
