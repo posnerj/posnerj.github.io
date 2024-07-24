@@ -4,12 +4,14 @@ permalink: /publications/
 title: Publications
 description: Publications by categories in reversed chronological order.
 sections:
-- bibquery: "@article"
-  text: "Journal Articles"
-- bibquery: "@phdthesis|@mastersthesis"
-  text: "Dissertation"
-- bibquery: "@inproceedings"
-  text: "Conference and Workshop Articles"
+  - bibquery: "@article"
+    text: "Journal Articles"
+  - bibquery: "@phdthesis|@mastersthesis"
+    text: "Dissertation"
+  - bibquery: "@inproceedings"
+    text: "Conference and Workshop Articles"
+  - bibquery: "@misc"
+    text: "Posters"
 years: [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017]
 social: true
 nav: true
