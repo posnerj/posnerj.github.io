@@ -2,26 +2,24 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Publications by categories in reversed chronological order.
+description: Publications about some works that I have done or collaborated with. You can download the documents to read them in full.
 sections:
   - bibquery: "@article"
-    text: "Journal Articles"
-  - bibquery: "@phdthesis|@mastersthesis"
-    text: "Dissertation"    
+    text: "Journal articles"
   - bibquery: "@inproceedings"
-    text: "Conference and Workshop Articles"
-  - bibquery: "@misc"
-    text: "Posters"
-    years: [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017]
-    social: true
-    nav: true
-    nav_order: 4
+    text: "Conference and workshop papers"
+  - bibquery: "@misc|@phdthesis|@mastersthesis"
+    text: "Thesis"
+years: [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015]
+social: true
+nav: true
+nav_order: 4
 ---
 
 <div class="publications">
 
 {%- for section in page.sections %}
-<a id="{{section.text}}"></a>
+  <a id="{{section.text}}"></a>
   <p class="bibtitle">{{section.text}}</p>
   {%- for y in page.years %}
 
@@ -38,7 +36,7 @@ sections:
 
     {%- endif -%}
 
-{%- endfor %}
+  {%- endfor %}
 
 {%- endfor %}
 
