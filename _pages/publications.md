@@ -6,7 +6,7 @@ description: Publications by categories in reversed chronological order.
 sections:
   - bibquery: "@article"
     text: "Journal Articles"
-  - bibquery: "@phdthesis|@mastersthesis"
+  - bibquery: "@phdthesis"
     text: "Dissertation"
   - bibquery: "@inproceedings"
     text: "Conference and Workshop Articles"
