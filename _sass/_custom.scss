@@ -79,19 +79,19 @@ html[data-theme='dark'] {
 
 // Author font
 div.author {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 
 // Booktitle, journal, etc font
 div.periodical {
-  font-size: 0.9rem;
+  font-size: 1.6rem;
 }
 
 // Bib type style
 p.bibtitle {
   color: var(--global-theme-color);
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: center;
   border-bottom: 1px solid #bbb;
 }
