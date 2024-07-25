@@ -20,12 +20,9 @@
     google_scholar_id = {MXK_kJrjxJIC},
     abstract = {
     In the rapidly evolving field of High-Performance Computing (HPC), the need for resource elasticity is paramount, particularly in addressing the dynamic nature of irregular computational workloads. A key area of elasticity lies within programming models that typically offer limited support.
- \newline
 Fully elastic programs are both malleable—capable of dynamically adjusting resources in response to external job scheduler requests—and evolving—autonomously deciding when and how to adjust resources, e.g., through automated decision-making. Previous elasticity approaches typically relied on iterative workloads and required complex code modifications.
  Asynchronous Many-Task (AMT) programming is emerging as a powerful alternative. In AMT, computations are split into fine-grained tasks, allowing transparent task relocation by the runtime system and unlocking significant potential for efficient elasticity.
- \newline
  This work-in-progress proposes an extension to the existing AMT APGAS that recently incorporated malleability. Our extension adds evolving capabilities providing automatic and transparent resource adjustments to meet changing computational workloads at runtime. Our easy-to-use abstractions require only minimal code additions; adjustments such as process initialization and termination are managed automatically. Our extension is validated via a load-balancing library for irregular workloads.
- \newline
  We propose two heuristics for automatic computational load detection: one that uses CPU loads provided by the operating system, and another that exploits detailed insights into task loads. We evaluate our approach using a novel synthetic benchmark that starts with a single task evolving into two irregular trees connected by a long sequential branch. Preliminary results are promising, indicating that both the CPU-based heuristic and the task-based heuristic showing similar efficiency.}, }
 
 @article{FinnertyMalleableSNCS24,
@@ -35,7 +32,10 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     year = {2024},
     doi = {10.1007/s42979-024-02641-7},
     altmetric = {false},
-    bibtex_show = {true} }
+    bibtex_show = {true},
+    google_scholar_id = {0EnyYjriUFMC},
+    abstract = {
+Malleability—the ability for applications to dynamically adjust their resource allocations at runtime—presents great potential to enhance the efficiency and resource utilization of modern supercomputers. However, applications are rarely capable of growing and shrinking their number of nodes at runtime, and batch job schedulers provide only rudimentary support for such features. While numerous approaches have been proposed to enable application malleability, these typically focus on iterative computations and require complex code modifications. This amplifies the challenges for programmers, who already wrestle with the complexity of traditional MPI inter-node programming. Asynchronous Many-Task (AMT) programming presents a promising alternative. In AMT, computations are split into many fine-grained tasks, which are processed by workers. This makes transparent task relocation via the AMT runtime system possible, thus offering great potential for enabling efficient malleability. In this work, we propose an extension to an existing AMT system, namely APGAS for Java. We provide easy-to-use malleability programming abstractions, requiring only minor application code additions from programmers. Runtime adjustments, such as process initialization and termination, are automatically managed by our malleability extension. We validate our malleability extension by adapting a load balancing library handling multiple benchmarks. We show that both shrinking and growing operations cost low execution time overhead. In addition, we demonstrate compatibility with potential batch job schedulers by developing a prototype batch job scheduler that supports malleable jobs. Through extensive real-world job batches execution on up to 32 nodes, involving rigid, moldable, and malleable programs, we evaluate the impact of deploying malleable APGAS applications on supercomputers. Exploiting scheduling algorithms, such as FCFS, Backfilling, Easy-Backfilling, and one exploiting malleable jobs, the experimental results highlight a significant improvement regarding several metrics for malleable jobs. We show a 13.09% makespan reduction (the time needed to schedule and execute all jobs), a 19.86% increase in node utilization, and a 3.61% decrease in job turnaround time (the time a job takes from its submission to completion) when using 100% malleable job in combination with our prototype batch job scheduler compared to the best-performing scheduling algorithm with 100% rigid jobs.}, }
 
 @inproceedings{PosnerSchedulingPECS23,
     author = {Jonas Posner and Fabian Hupfeld and Patrick Finnerty},
@@ -46,7 +46,15 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     doi = {10.1007/978-3-031-48803-0_14},
     slides = {https://doi.org/10.5281/zenodo.8315842},
     altmetric = {false},
-    bibtex_show = {true} }
+    bibtex_show = {true},
+    google_scholar_id = {MXK_kJrjxJIC},
+    abstract = {
+In recent years, supercomputers have experienced significant advancements in performance and have grown in size, now comprising several thousands nodes. To unlock the full potential of these machines, efficient resource management and job scheduling—assigning parallel programs to nodes—are crucial. Traditional job scheduling approaches employ rigid jobs that use the same set of resources throughout their lifetime, resulting in significant resource under-utilization.
+By employing malleable jobs that are capable of changing their number of resources during execution, the performance of supercomputers has potential to increase. However, designing algorithms for scheduling malleable jobs is challenging since it requires complex strategies to determine when and how to reassign resources among jobs while maintaining fairness.
+In this work, we extend a recently proposed malleable job scheduling algorithm by introducing new strategies. Specifically, we propose three priority orders to determine which malleable job to consider for resource reassignments and the number of nodes when starting a job. Additionally, we propose three reassignment approaches to handle the delay between scheduling decisions and the actual transfer of resources between jobs. This results in nine algorithm variants.
+We then evaluate the impact of deploying malleable jobs scheduled by our nine algorithm variants. For that, we simulate the scheduling of job sets containing varying proportions of rigid and malleable jobs on a hypothetical supercomputer. The results demonstrate significant improvements across several metrics. For instance, with 20% of malleable jobs, the overall completion time is reduced by 11% while maintaining high node utilization and fairness.
+}, }
+
 
 @inproceedings{FinnertyMalleableAMTE24,
     author = {Patrick Finnerty and Reo Takaoka and Takuma Kanzaki and Jonas Posner},
@@ -57,7 +65,12 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     doi = {10.1007/978-3-031-48803-0_8},
     slides = {https://doi.org/10.5281/zenodo.8287393},
     altmetric = {false},
-    bibtex_show = {true} }
+    bibtex_show = {true},
+    google_scholar_id = {8k81kl-MbHgC},
+    abstract = {
+Malleability—the ability for applications to dynamically adjust their resource allocations at runtime—presents great potential to enhance the efficiency and resource utilization of modern supercomputers. However, applications are rarely capable of growing and shrinking their number of nodes at runtime, and batch job schedulers provide only rudimentary support for these features. While numerous approaches have been proposed for enabling application malleability, these typically focus on iterative computations and require complex code modifications. This amplifies the challenges for programmers, who already wrestle with the complexity of traditional MPI inter-node programming.
+Asynchronous Many-Task (AMT) programming presents a promising alternative. Computations are split into many fine-grained tasks, which are processed by workers. This way, AMT enables transparent task relocation via the runtime system, thus offering great potential for efficient malleability. In this paper, we propose an extension to an existing AMT system, namely APGAS for Java, that provides easy-to-use malleability. More specifically, programmers enable application malleability with only minimal code additions, thanks to the simple abstractions we provide. Runtime adjustments, such as process initialization and termination, are automatically managed. We demonstrate the ease of integration between our extension and future batch job schedulers through the implementation of a simplistic malleable batch job scheduler. Additionally, we validate our extension through the adaption of a load balancing library handling multiple benchmarks. Finally, we show that even a simplistic scheduling strategy for malleable applications improves resource utilization, job throughput, and overall job response time.
+}, }
 
 @conference{PosnerAMTSC22,
     author = {Jonas Posner},
@@ -82,8 +95,16 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     year = {2021},
     doi = {10.17170/kobra-202207286542},
     altmetric = {false},
-    bibtex_show = {true} }
-
+    bibtex_show = {true},
+    google_scholar_id = {hqOjcs7Dif8C},
+    abstract = {
+High-Performance Computing (HPC) enables solving complex problems from various scientific fields including key societal problems such as COVID-19. Recently, traditional simulations have been joined by more diverse workloads, including irregular ones limiting the predictability of the computations. Workloads are run on HPC machines that comprise an increasing number of hardware components, and serve multiple users simultaneously.
+To enable efficient and productive programming of today’s HPC machines and beyond, it is essential to address a variety of issues, including: load balancing (i.e., utilizing all resources equally), fault tolerance (i.e., coping with hardware failures), and resource elasticity (i.e., allowing the addition/release of resources).
+In this thesis, we address these issues in the context of Asynchronous Many-Task (AMT) programming. In AMT, programmers split a computation into many fine-grained execution units (called tasks), which are dynamically mapped to processing units (e.g., threads) by a runtime system. While AMT is becoming established for single computers, we are focusing on cluster AMTs, which are currently merely prototypes with limited functionalities.
+Regarding load balancing, we propose a work stealing technique that transparently schedules tasks to resources of the overall system, balancing the workload over all processing units. In this context, we introduce several tasking constructs. Experiments show good scalability, and a productivity evaluation shows intuitive use.
+Regarding fault tolerance, we propose four techniques to protect programs transparently. All perform localized recovery and continue the program execution with fewer resources. Three techniques write uncoordinated checkpoints in a resilient store: One saves descriptors of all open tasks; the second saves only part of them; and the third logs stealing events to reduce the number of checkpoints. The fourth technique does not write checkpoints at all, but exploits natural task duplication of work stealing. Experiments show no clear winner between the techniques. For instance, the first one has a failure-free running time overhead below 1% and a recovery overhead below 0.5 seconds, both for smooth weak caling. Simulations of job set executions show that the completion time can be reduced by up to 97%.
+Regarding resource elasticity, we propose a technique to enable the addition and release of nodes at runtime by transparently relocating tasks accordingly. Experiments show costs for adding and releasing nodes below 0.5 seconds. Additionally, simulations of job set executions show that the completion time can be reduced by up to 20%.
+}, }
 
 @article{PosnerCheckpointingIJNC22,
     author = {Jonas Posner and Lukas Reitz and Claudia Fohry},
@@ -95,7 +116,11 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     pages = {47--72},
     doi = {10.15803/ijnc.12.1_47},
     altmetric = {false},
-    bibtex_show = {true} }
+    bibtex_show = {true},
+    google_scholar_id = {_FxGoFyzp5QC},
+    abstract = {
+With the advent of exascale computing, issues such as application irregularity and permanent hardware failure are growing in importance. Irregularity is often addressed by task-based parallel programming implemented with work stealing. At the task level, resilience can be provided by two principal approaches, namely checkpointing and supervision. For both, particular algorithms have been worked out recently. They perform local recovery and continue the program execution on a reduced set of resources. The checkpointing algorithms regularly save task descriptors explicitly, while the supervision algorithms exploit their natural duplication during work stealing and may be coupled with steal tracking to minimize the number of task re-executions. Thus far, the two groups of algorithms have been targeted at different task models: checkpointing algorithms at dynamic independent tasks, and supervision algorithms at nested fork-join programs. This paper transfers the most advanced supervision algorithm to the dynamic independent tasks model, thus enabling a comparison between checkpointing and supervision. Our comparison includes experiments, running time predictions, and simulations of job set executions. Results consistently show typical resilience overheads below 1% for both approaches. The overheads are lower for supervision in practically relevant cases, but checkpointing takes over for order millions of processes.
+}, }
 
 
 @inproceedings{PosnerElasticityP2S221,
@@ -107,7 +132,13 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     pages = {1--10},
     doi = {10.1145/3458744.3473361},
     altmetric = {false},
-    bibtex_show = {true} }
+    bibtex_show = {true},
+    google_scholar_id = {Se3iqnhoufwC},
+    abstract = {
+Resource elasticity allows to dynamically change the resources of running jobs, which may significantly improve the throughput on supercomputers. Elasticity requires support from both job schedulers and user applications. Whereas the adaptation of traditional programs requires additional programmer effort, task-based programs can be made elastic in a transparent way.
+In this paper, we propose a corresponding technique for implementation in a runtime system. We refer to a work stealing-based runtime for clusters, which uses the lifeline scheme for victim selection, combines inter-node work stealing with intra-node work sharing, and handles dynamic independent tasks, i.e., tasks that may spawn child tasks but do not otherwise cooperate. We experimentally assess the elasticity overhead of our scheme and find that adding/releasing up to 64 nodes takes less than 0.5 seconds. This value is determined with the help of a new formula that estimates the overhead-free running time of work-stealing programs with a changing number of workers.
+Using this result, we then quantify the gain of deploying elastic jobs. For that, we simulate the execution of job sets that contain some percentage of elastic jobs on two hypothetical supercomputers. We use an existing elastic job scheduler, which we concretize, e.g. by a new heuristic to determine the minimum, maximum, and preferred number of nodes for a job. Results show that the makespan can be reduced by up to 20% if most jobs are elastic.
+}, }
 
 
 @inproceedings{PosnerElasticity21,
@@ -129,8 +160,11 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     publisher = {IEEE},
     doi = {10.1109/IPDPSW52791.2021.00089},
     altmetric = {false},
-    bibtex_show = {true} }
-
+    bibtex_show = {true},
+    google_scholar_id = {LkGwnXOMwfcC},
+    abstract = {
+With the advent of exascale computing, issues such as application irregularity and permanent hardware failure are growing in importance. Irregularity is often addressed by task-based parallel programming coupled with work stealing. At the task level, resilience can be provided by two principal approaches, namely checkpointing and supervision. For both, particular algorithms have been worked out recently. They perform local recovery and continue the program execution on a reduced set of resources. The checkpointing algorithms regularly save task descriptors explicitly, while the supervision algorithms exploit their natural duplication during work stealing and may be coupled with steal tracking to minimize the number of task re-executions. Thus far, the two groups of algorithms have been targeted at different task models: checkpointing algorithms at dynamic independent tasks, and supervision algorithms at nested fork-join programs.This paper transfers the most advanced supervision algorithm to the dynamic independent tasks model, thus enabling a comparison between checkpointing and supervision. Our comparison includes experiments and running time predictions. Results consistently show typical resilience overheads below 1% for both approaches. The overheads are lower for supervision in practically relevant cases, but checkpointing takes over for order millions of processes.
+}, }
 
 @conference{PosnerLocalityPrace21,
     author = {Jonas Posner},
@@ -150,8 +184,11 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     pages = {404--405},
     doi = {10.1109/CLUSTER49012.2020.00051},
     altmetric = {false},
-    bibtex_show = {true} }
-
+    bibtex_show = {true},
+    google_scholar_id = {WF5omc3nYNoC},
+    abstract = {
+Fault tolerance is becoming increasingly important since the probability of permanent hardware failures increases with machine size. A typical resilience approach to fail/stop failures today is checkpointing, which can be performed on system- or application-level. Both levels come in many variants, but they fundamentally differ. On system-level, no code changes are required, full program states are saved, and after a failure the program must be restarted from the last checkpoint. In contrast, on application-level, only user-defined data are check-pointed, which requires some programming effort. Thereby, the running time overhead may be reduced significantly, and programs may continue execution after failures.
+}, }
 
 @article{PosnerFaultToleranceFGCS19,
     author = {Jonas Posner and Lukas Reitz and Claudia Fohry},
@@ -162,8 +199,14 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     pages = {119--134},
     doi = {10.1016/j.future.2019.11.031},
     altmetric = {false},
-    bibtex_show = {true} }
-
+    bibtex_show = {true},
+    google_scholar_id = {Tyk-4Ss8FVUC},
+    abstract = {
+Fault tolerance is an important requirement for successful program execution on exascale systems. The common approach, checkpointing, regularly saves a program’s state, such that the execution can be restarted after permanent node failures. Checkpointing is often performed on system level, but its deployment on application level can reduce the running time overhead.
+The drawback of application-level checkpointing is a higher programming expense. It pays off if the checkpointing is applied to reusable patterns. We consider task pools, which exist in many variants. The paper supposes that tasks are generated dynamically and are free of side effects. Further, the final result must be computed from individual task results by reduction. Moreover, the pools must be distributed with private queues, and adopt work stealing.
+The paper describes and evaluates three application-level fault tolerance schemes for task pools. All use uncoordinated checkpointing and regularly save information in a resilient store. The first scheme (called AllFT) saves descriptors of all open tasks; the second scheme (called IncFT) selectively and incrementally saves only part of them; and the third scheme (called LogFT) logs stealing events and writes checkpoints in parallel to task processing.
+All schemes have been implemented by extending the Global Load Balancing (GLB) library of the “APGAS for Java” programming system. In experiments with the UTS, NQueens, and BC benchmarks with up to 672 workers, the running time overhead during failure-free execution, compared to a non-resilient version of GLB, was typically below 6%. The recovery cost was negligible, and there was no clear winner among the three schemes. A more detailed performance analysis with synthetic benchmarks revealed that IncFT and LogFT are superior in scenarios with large task descriptors.
+}, }
 
 @inproceedings{PosnerSparkPAW18,
     author = {Jonas Posner and Lukas Reitz and Claudia Fohry},
@@ -174,8 +217,11 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     pages = {11--22},
     doi = {10.1109/PAW-ATM.2018.00007},
     altmetric = {false},
-    bibtex_show = {true} }
-
+    bibtex_show = {true},
+    google_scholar_id = {9yKSN-GCB0IC},
+    abstract = {
+Although Java is rarely used in HPC, there are a few notable libraries. Use of Java may help to bridge the gap between HPC and big data processing. This paper compares the big data library Spark, and the HPC libraries PCJ and APGAS, regarding productivity and performance. We refer to Java versions of all libraries. For APGAS, we include both the original version and an own extension by locality-flexible tasks. We consider three benchmarks: Calculation of π from HPC, Unbalanced Tree Search (UTS) from HPC, and WordCount from the big data domain. In performance measurements with up to 144 workers, the extended APGAS library was the clear winner. With 144 workers, APGAS programs were up to a factor of more than two faster than Spark programs, and up to about 30% faster than PCJ programs. Regarding productivity, the extended APGAS programs consistently needed the lowest number of different library constructs. Spark ranged second in productivity and PCJ third.
+}, }
 
 @inproceedings{FohryIncrementalHPCS18,
     author = {Claudia Fohry and Jonas Posner and Lukas Reitz},
@@ -185,8 +231,11 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     pages = {621--628},
     doi = {10.1109/HPCS.2018.00103},
     altmetric = {false},
-    bibtex_show = {true} }
-
+    bibtex_show = {true},
+    google_scholar_id = {qjMakFHDy7sC},
+    abstract = {
+Checkpointing is a common approach to prevent loss of a program's state after permanent node failures. When it is performed on application-level, less data need to be saved. This paper suggests an uncoordinated application-level checkpointing technique for task pools. It selectively and incrementally saves only those tasks that have stayed in the pool during some period of time and that have not been saved before. The checkpoints are held in a resilient in-memory data store. Our technique applies to any task pool variant in which workers operate at the top of local pools, and work stealing operates at the bottom. Furthermore, the tasks must be free of side effects, and the final result must be calculated by reduction from individual task results. We implemented the technique for the lifeline-based global load balancing variant of task pools. This variant couples random victim selection with an overlay graph for termination detection. A fault-tolerant realization already exists in the form of a Java library, called JFT_GLB. It uses the APGAS and Hazelcast libraries underneath. Our implementation modifies JFT_GLB by replacing its nonselective checkpointing scheme with our new one. In experiments, we compared the overhead of the new scheme to that of JFT_GLB, with UTS, BC and two synthetic benchmarks. The new scheme required slightly more running time when local pools were small, and paid off otherwise.
+}, }
 
 @article{PosnerHybridSuper18,
     author = {Jonas Posner and Claudia Fohry},
@@ -197,8 +246,11 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     pages = {1435--1448},
     doi = {10.1007/s11227-018-2234-8},
     altmetric = {false},
-    bibtex_show = {true} }
-
+    bibtex_show = {true},
+    google_scholar_id = {IjCSPb-OGe4C},
+    abstract = {
+Since large parallel machines are typically clusters of multicore nodes, parallel programs should be able to deal with both shared memory and distributed memory. This paper proposes a hybrid work stealing scheme, which combines the lifeline-based variant of distributed task pools with the node-internal load balancing of Java’s Fork/Join framework. We implemented our scheme by extending the APGAS library for Java, which is a branch of the X10 project. APGAS programmers can now spawn locality-flexible tasks with a new asyncAny construct. These tasks are transparently mapped to any resource in the overall system, so that the load is balanced over both nodes and cores. Unprocessed asyncAny-tasks can also be cancelled. In performance measurements with up to 144 workers on up to 12 nodes, we observed near linear speedups for four benchmarks and a low overhead for cancellation-related bookkeeping.
+}, }
 
 @inproceedings{PosnerCombinationWLPP18,
     author = {Jonas Posner and Claudia Fohry},
@@ -209,8 +261,11 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     pages = {234--243},
     doi = {10.1007/978-3-319-78054-2_22},
     altmetric = {false},
-    bibtex_show = {true} }
-
+    bibtex_show = {true},
+    google_scholar_id = {UeHWp8X0CEIC},
+    abstract = {
+Since today’s clusters consist of nodes with multicore processors, modern parallel applications should be able to deal with shared and distributed memory simultaneously. In this paper, we present a novel hybrid work stealing scheme for the APGAS library for Java, which is a branch of the X10 project. Our scheme extends the library’s runtime system, which traditionally performs intra-node work stealing with the Java Fork/Join framework. We add an inter-node work stealing scheme that is inspired by lifeline-based global load balancing. The extended functionality can be accessed from the APGAS library with new constructs. Most important, locality-flexible tasks can be submitted with asyncAny, and are then automatically scheduled over both nodes and cores. In experiments with up to 144 workers on up to 12 nodes, our system achieved near linear speedups for three benchmarks.
+}, }
 
 @article{PosnerFaultToleranceIJNC18,
     author = {Jonas Posner and Claudia Fohry},
@@ -222,8 +277,12 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     pages = {2--31},
     doi = {10.15803/ijnc.8.1_2},
     altmetric = {false},
-    bibtex_show = {true} }
-
+    bibtex_show = {true},
+    google_scholar_id = {eQOLeE2rZwMC},
+    abstract = {
+Fault tolerance is gaining importance in parallel computing, especially on large clusters. Traditional approaches handle the issue on system-level. Application-level approaches are becoming increasingly popular, since they may be more efficient. This paper presents a fault-tolerant work stealing technique on application level, and describes its implementation in a generic reusable task pool framework for Java. When using this framework, programmers can focus on writing sequential code to solve their actual problem.
+The framework is written in Java and utilizes the APGAS library for parallel programming. It implements a comparatively simple algorithm that relies on a resilient data structure for storing backups of local pools and other information. Our implementation uses Hazelcast’s IMap for this purpose, which is an automatically distributed and fault-tolerant key-value store. The number of backup copies is configurable and determines how many simultaneous failures can be tolerated. Our algorithm is shown to be correct in the sense that failures are either tolerated and the computed result is the same as in non-failure case, or the program aborts with an error message.
+}, }
 
 @conference{PosnerFaultToleranceIPDPS17,
     author = {Jonas Posner},
@@ -242,8 +301,11 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     pages = {854--863},
     doi = {10.1109/ipdpsw.2017.31},
     altmetric = {false},
-    bibtex_show = {true} }
-
+    bibtex_show = {true},
+    google_scholar_id = {u-x6o8ySG0sC},
+    abstract = {
+Fault tolerance is a major issue for parallel applications. Approaches on application-level are gaining increasing attention because they may be more efficient than system-level ones. In this paper, we present a generic reusable framework for fault-tolerant parallelization with the task pool pattern. Users of this framework can focus on coding sequential tasks for their problem, while respecting some framework contracts. The framework is written in Java and deploys the APGAS library as well as Hazelcast's distributed and fault-tolerant IMap. Our fault-tolerance scheme uses two system-wide maps, in which it stores, e.g., backups of local task pools. Framework users may configure the number of backup copies to control how many simultaneous failures are tolerated. The algorithm is correct in the sense that the computed result is the same as in non-failure case, or the program aborts with an error message. In experiments with up to 128 workers, we compared the framework's performance with that of a non-fault-tolerant variant during failure-free operation. For the UTS and BC benchmarks, the overhead was at most 35%. Measured values were similar as for a related, but less flexible fault-tolerant X10 framework, without a clear winner. Raising the number of backup copies to six only marginally improved the overhead.
+}, }
 
 @inproceedings{PosnerCooperationX1016,
     author = {Jonas Posner and Claudia Fohry},
@@ -254,8 +316,11 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     pages = {13--17},
     doi = {10.1145/2931028.2931029},
     altmetric = {false},
-    bibtex_show = {true} }
-
+    bibtex_show = {true},
+    google_scholar_id = {zYLM7Y9cAGgC},
+    abstract = {
+Work stealing can be implemented in either a cooperative or a coordinated way. We compared the two approaches for lifeline-based global load balancing, which is the algorithm used by X10's Global Load Balancing framework GLB. We conducted our study with the APGAS library for Java, to which we ported GLB in a first step. Our cooperative variant resembles the original GLB framework, except that strict sequentialization is replaced by Java synchronization constructs such as critical sections. Our coordinated variant enables concurrent access to local task pools by using a split queue data structure. In experiments with modified versions of the UTS and BC benchmarks, the cooperative and coordinated APGAS variants had similar executions times, without a clear winner. Both variants outperformed the original GLB when compiled with Managed X10. Experiments were run on up to 128 nodes, to which we assigned up to 512 places.
+}, }
 
 @article{FohryFaultToleranceSCPE15,
     author = {Claudia Fohry and Marco Bungart and Jonas Posner},
@@ -267,8 +332,11 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     pages = {169--186},
     doi = {10.12694/scpe.v16i2.1088},
     altmetric = {false},
-    bibtex_show = {true} }
-
+    bibtex_show = {true},
+    google_scholar_id = {2osOgNQ5qMEC},
+    abstract = {
+Scalability postulates fault tolerance to be efficient. One approach handles permanent node failures at user level. It is supported by Resilient X10, a Partitioned Global Address Space language that throws an exception when a place fails. We consider task pools, which are a widely used pattern for load balancing of irregular applications, and refer to the variant that is implemented in the Global Load Balancing framework GLB of X10. Here, each worker maintains a private pool and supports cooperative work stealing. Victim selection and termination detection follow the lifeline scheme. Tasks may generate new tasks dynamically, are free of side-effects, and their results are combined by reduction. We consider a single worker per node, and assume that failures are rare and uncorrelated. The paper introduces two fault tolerance schemes. Both are based on regular backups of the local task pool contents, which are written to the main memory of another worker and updated in the event of stealing. The first scheme mainly relies on synchronous communication. The second scheme deploys asynchronous communication, and significantly improves on the first scheme efficiency and robustness. Both schemes have been implemented by extending the GLB source code. Experiments were run with the Unbalanced Tree Search (UTS) and Betweenness Centrality benchmarks. For UTS on 128 nodes, for instance, we observed an overhead of about 81% with the synchronous scheme and about 7% with the asynchronous scheme. The protocol overhead for a place failure was negligible.
+}, }
 
 @inproceedings{FohryFaultToleranceX1015,
     author = {Claudia Fohry and Marco Bungart and Jonas Posner},
@@ -279,8 +347,11 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     pages = {27--32},
     doi = {10.1145/2771774.2771779},
     altmetric = {false},
-    bibtex_show = {true} }
-
+    bibtex_show = {true},
+    google_scholar_id = {YsMSGLbcyi4C},
+    abstract = {
+X10's Global Load Balancing framework GLB implements a user-level task pool for inter-place load balancing. It is based on work stealing and deploys the lifeline algorithm. A single worker per place alternates between processing tasks and answering steal requests. We have devised an efficient fault-tolerance scheme for this algorithm, improving on a simpler resilience scheme from our own previous work. Among the base ideas of the new scheme are incremental backups of ``stable'' tasks and an actor-like communication structure. The paper reports on our ongoing work to extend the GLB framework accordingly. While details of the scheme are left out, we discuss implementation issues and preliminary experimental results.
+}, }
 
 @inproceedings{BungartFaultToleranceSYNASC14,
     author = {Marco Bungart and Claudia Fohry and Jonas Posner},
@@ -291,6 +362,9 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     publisher = {IEEE},
     doi = {10.1109/synasc.2014.69},
     altmetric = {false},
-    bibtex_show = {true} }
-
+    bibtex_show = {true},
+    google_scholar_id = {W7OEmFMy1HYC},
+    abstract = {
+Scalability postulates fault tolerance to be effective. We consider a user-level fault tolerance technique to cope with permanent node failures. It is supported by X10, one of the major Partitioned Global Address Space (PGAS) languages. In Resilient X10, an exception is thrown when a place (node) fails. This paper investigates task pools, which are often used by irregular applications to balance their load. We consider global load balancing with one worker per place. Each worker maintains a private task pool and supports cooperative work stealing. Tasks may generate new tasks dynamically, are free of side-effects, and their results are combined by reduction. Our first contribution is a task pool algorithm that can handle permanent place failures. It is based on snapshots that are regularly written to other workers and are updated in the event of stealing. Second, we implemented the algorithm in the Global Load Balancing framework GLB, which is part of the standard library of X10. We ran experiments with the Unbalanced Tree Search (UTS) and Between ness Centrality (BC) benchmarks. With 64 places on 4 nodes, for instance, we observed an overhead of about 4% for using fault-tolerant GLB instead of GLB. The protocol overhead for a place failure was neglectable.
+}, }
 
