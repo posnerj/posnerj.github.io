@@ -17,15 +17,15 @@
     doi = {10.1007/978-3-031-61763-8_15},
     altmetric = {false},
     bibtex_show = {true},
-    google_scholar_id={0EnyYjriUFMC},
+    google_scholar_id = {MXK_kJrjxJIC},
     abstract = {
     In the rapidly evolving field of High-Performance Computing (HPC), the need for resource elasticity is paramount, particularly in addressing the dynamic nature of irregular computational workloads. A key area of elasticity lies within programming models that typically offer limited support.
- \par
- Fully elastic programs are both malleable—capable of dynamically adjusting resources in response to external job scheduler requests—and evolving—autonomously deciding when and how to adjust resources, e.g., through automated decision-making. Previous elasticity approaches typically relied on iterative workloads and required complex code modifications.
+ \newline
+Fully elastic programs are both malleable—capable of dynamically adjusting resources in response to external job scheduler requests—and evolving—autonomously deciding when and how to adjust resources, e.g., through automated decision-making. Previous elasticity approaches typically relied on iterative workloads and required complex code modifications.
  Asynchronous Many-Task (AMT) programming is emerging as a powerful alternative. In AMT, computations are split into fine-grained tasks, allowing transparent task relocation by the runtime system and unlocking significant potential for efficient elasticity.
- \par
+ \newline
  This work-in-progress proposes an extension to the existing AMT APGAS that recently incorporated malleability. Our extension adds evolving capabilities providing automatic and transparent resource adjustments to meet changing computational workloads at runtime. Our easy-to-use abstractions require only minimal code additions; adjustments such as process initialization and termination are managed automatically. Our extension is validated via a load-balancing library for irregular workloads.
-\par
+ \newline
  We propose two heuristics for automatic computational load detection: one that uses CPU loads provided by the operating system, and another that exploits detailed insights into task loads. We evaluate our approach using a novel synthetic benchmark that starts with a single task evolving into two irregular trees connected by a long sequential branch. Preliminary results are promising, indicating that both the CPU-based heuristic and the task-based heuristic showing similar efficiency.}, }
 
 @article{FinnertyMalleableSNCS24,
