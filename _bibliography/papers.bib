@@ -35,7 +35,7 @@ Fully elastic programs are both malleable—capable of dynamically adjusting res
     bibtex_show = {true},
     google_scholar_id = {0EnyYjriUFMC},
     abstract = {
-Malleability—the ability for applications to dynamically adjust their resource allocations at runtime—presents great potential to enhance the efficiency and resource utilization of modern supercomputers. However, applications are rarely capable of growing and shrinking their number of nodes at runtime, and batch job schedulers provide only rudimentary support for such features. While numerous approaches have been proposed to enable application malleability, these typically focus on iterative computations and require complex code modifications. This amplifies the challenges for programmers, who already wrestle with the complexity of traditional MPI inter-node programming. Asynchronous Many-Task (AMT) programming presents a promising alternative. In AMT, computations are split into many fine-grained tasks, which are processed by workers. This makes transparent task relocation via the AMT runtime system possible, thus offering great potential for enabling efficient malleability. In this work, we propose an extension to an existing AMT system, namely APGAS for Java. We provide easy-to-use malleability programming abstractions, requiring only minor application code additions from programmers. Runtime adjustments, such as process initialization and termination, are automatically managed by our malleability extension. We validate our malleability extension by adapting a load balancing library handling multiple benchmarks. We show that both shrinking and growing operations cost low execution time overhead. In addition, we demonstrate compatibility with potential batch job schedulers by developing a prototype batch job scheduler that supports malleable jobs. Through extensive real-world job batches execution on up to 32 nodes, involving rigid, moldable, and malleable programs, we evaluate the impact of deploying malleable APGAS applications on supercomputers. Exploiting scheduling algorithms, such as FCFS, Backfilling, Easy-Backfilling, and one exploiting malleable jobs, the experimental results highlight a significant improvement regarding several metrics for malleable jobs. We show a 13.09% makespan reduction (the time needed to schedule and execute all jobs), a 19.86% increase in node utilization, and a 3.61% decrease in job turnaround time (the time a job takes from its submission to completion) when using 100% malleable job in combination with our prototype batch job scheduler compared to the best-performing scheduling algorithm with 100% rigid jobs.}, }
+Malleability—the ability for applications to dynamically adjust their resource allocations at runtime—presents great potential to enhance the efficiency and resource utilization of modern supercomputers. However, applications are rarely capable of growing and shrinking their number of nodes at runtime, and batch job schedulers provide only rudimentary support for such features. While numerous approaches have been proposed to enable application malleability, these typically focus on iterative computations and require complex code modifications. This amplifies the challenges for programmers, who already wrestle with the complexity of traditional MPI inter-node programming. Asynchronous Many-Task (AMT) programming presents a promising alternative. In AMT, computations are split into many fine-grained tasks, which are processed by workers. This makes transparent task relocation via the AMT runtime system possible, thus offering great potential for enabling efficient malleability. In this work, we propose an extension to an existing AMT system, namely APGAS for Java. We provide easy-to-use malleability programming abstractions, requiring only minor application code additions from programmers. Runtime adjustments, such as process initialization and termination, are automatically managed by our malleability extension. We validate our malleability extension by adapting a load balancing library handling multiple benchmarks. We show that both shrinking and growing operations cost low execution time overhead. In addition, we demonstrate compatibility with potential batch job schedulers by developing a protoannote batch job scheduler that supports malleable jobs. Through extensive real-world job batches execution on up to 32 nodes, involving rigid, moldable, and malleable programs, we evaluate the impact of deploying malleable APGAS applications on supercomputers. Exploiting scheduling algorithms, such as FCFS, Backfilling, Easy-Backfilling, and one exploiting malleable jobs, the experimental results highlight a significant improvement regarding several metrics for malleable jobs. We show a 13.09% makespan reduction (the time needed to schedule and execute all jobs), a 19.86% increase in node utilization, and a 3.61% decrease in job turnaround time (the time a job takes from its submission to completion) when using 100% malleable job in combination with our protoannote batch job scheduler compared to the best-performing scheduling algorithm with 100% rigid jobs.}, }
 
 @inproceedings{PosnerSchedulingPECS23,
     author = {Jonas Posner and Fabian Hupfeld and Patrick Finnerty},
@@ -100,7 +100,7 @@ Asynchronous Many-Task (AMT) programming presents a promising alternative. Compu
     abstract = {
 High-Performance Computing (HPC) enables solving complex problems from various scientific fields including key societal problems such as COVID-19. Recently, traditional simulations have been joined by more diverse workloads, including irregular ones limiting the predictability of the computations. Workloads are run on HPC machines that comprise an increasing number of hardware components, and serve multiple users simultaneously.
 To enable efficient and productive programming of today’s HPC machines and beyond, it is essential to address a variety of issues, including: load balancing (i.e., utilizing all resources equally), fault tolerance (i.e., coping with hardware failures), and resource elasticity (i.e., allowing the addition/release of resources).
-In this thesis, we address these issues in the context of Asynchronous Many-Task (AMT) programming. In AMT, programmers split a computation into many fine-grained execution units (called tasks), which are dynamically mapped to processing units (e.g., threads) by a runtime system. While AMT is becoming established for single computers, we are focusing on cluster AMTs, which are currently merely prototypes with limited functionalities.
+In this thesis, we address these issues in the context of Asynchronous Many-Task (AMT) programming. In AMT, programmers split a computation into many fine-grained execution units (called tasks), which are dynamically mapped to processing units (e.g., threads) by a runtime system. While AMT is becoming established for single computers, we are focusing on cluster AMTs, which are currently merely protoannotes with limited functionalities.
 Regarding load balancing, we propose a work stealing technique that transparently schedules tasks to resources of the overall system, balancing the workload over all processing units. In this context, we introduce several tasking constructs. Experiments show good scalability, and a productivity evaluation shows intuitive use.
 Regarding fault tolerance, we propose four techniques to protect programs transparently. All perform localized recovery and continue the program execution with fewer resources. Three techniques write uncoordinated checkpoints in a resilient store: One saves descriptors of all open tasks; the second saves only part of them; and the third logs stealing events to reduce the number of checkpoints. The fourth technique does not write checkpoints at all, but exploits natural task duplication of work stealing. Experiments show no clear winner between the techniques. For instance, the first one has a failure-free running time overhead below 1% and a recovery overhead below 0.5 seconds, both for smooth weak caling. Simulations of job set executions show that the completion time can be reduced by up to 97%.
 Regarding resource elasticity, we propose a technique to enable the addition and release of nodes at runtime by transparently relocating tasks accordingly. Experiments show costs for adding and releasing nodes below 0.5 seconds. Additionally, simulations of job set executions show that the completion time can be reduced by up to 20%.
@@ -379,7 +379,7 @@ Scalability postulates fault tolerance to be effective. We consider a user-level
     booktitle = {Workshop on Effective Use of Resources on the Computing Continuum},
     year = {2024},
     address = {Kobe (Japan)},
-    type = {Invited Talk},}
+    annote = {Invited Talk}, }
 
 @misc{PosnerTalkKnox24,
     author = {Jonas Posner},
@@ -387,7 +387,8 @@ Scalability postulates fault tolerance to be effective. We consider a user-level
     booktitle = {Workshop on Asynchronous Many‑Task Systems and Applications (WAMTA)},
     year = {2024},
     address = {Knoxville (U.S.)},
-    type = {Paper Presentation},}
+    annote = {Paper Presentation},
+    slides = {https://doi.org/10.5281/zenodo.10671344}, }
 
 @misc{PosnerTalkLimassol23,
     author = {Jonas Posner},
@@ -395,7 +396,8 @@ Scalability postulates fault tolerance to be effective. We consider a user-level
     booktitle = {Euro‑Par Workshops (PECS)},
     year = {2023},
     address = {Limassol (Cyprus)},
-    type = {Paper Presentation},}
+    annote = {Paper Presentation},
+    slides = {https://doi.org/10.5281/zenodo.8315842}, }
 
 @misc{PosnerTalkDallas22,
     author = {Jonas Posner},
@@ -403,7 +405,7 @@ Scalability postulates fault tolerance to be effective. We consider a user-level
     booktitle = {Supercomputing (SC), Doctoral Showcases},
     year = {2022},
     address = {Dallas (U.S.)},
-    type = {Paper Presentation},}
+    annote = {Paper Presentation}, }
 
 @misc{PosnerTalkOnline21,
     author = {Jonas Posner},
@@ -411,7 +413,7 @@ Scalability postulates fault tolerance to be effective. We consider a user-level
     booktitle = {International Conference on Parallel Processing (ICPP) Workshops (P2S2)},
     year = {2021},
     address = {online},
-    type = {Paper Presentation},}
+    annote = {Paper Presentation}, }
 
 @misc{PosnerTalkDenver19,
     author = {Jonas Posner},
@@ -419,7 +421,7 @@ Scalability postulates fault tolerance to be effective. We consider a user-level
     booktitle = {Supercomputing (SC) Workshops (PAW‑ATM)},
     year = {2019},
     address = {Denver (U.S.)},
-    type = {Paper Presentation},}
+    annote = {Paper Presentation}, }
 
 @misc{PosnerTalkOrleans18,
     author = {Jonas Posner},
@@ -427,7 +429,7 @@ Scalability postulates fault tolerance to be effective. We consider a user-level
     booktitle = {International Conference on High Performance Computing & Simulation (HPCS)},
     year = {2018},
     address = {Orl\'{e}ans (France)},
-    type = {Paper Presentation},}
+    annote = {Paper Presentation}, }
 
 @misc{PosnerTalkLublin17,
     author = {Jonas Posner},
@@ -435,8 +437,7 @@ Scalability postulates fault tolerance to be effective. We consider a user-level
     booktitle = {Parallel Processing and Applied Mathematics (PPAM)},
     year = {2017},
     address = {Lublin (Poland)},
-    type = {Paper Presentation}, }
-
+    annote = {Paper Presentation}, }
 
 @misc{PosnerTalkOrlando17,
     author = {Jonas Posner},
@@ -444,11 +445,5 @@ Scalability postulates fault tolerance to be effective. We consider a user-level
     booktitle = {International Parallel and Distributed Processing (IPDPS) Workshops (APDCM)},
     year = {2017},
     address = {Lake Buena Vista (U.S.)},
-    type = {Paper Presentation}, }
-
-
-
-
-
-
+    annote = {Paper Presentation}, }
 
