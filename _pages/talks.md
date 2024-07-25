@@ -2,11 +2,36 @@
 layout: page
 permalink: /talks/
 title: Talks
-description: 
+description: Given talks in reversed chronological order.
 nav: true
 nav_order: 4
+years: [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014]
+sections:
+  - bibquery: "@misc"
+    text: "Talks"
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+<div class="publications">
 
-Organize your courses by years, topics, or universities, however you like!
+{%- for section in page.sections %}
+  <a id="{{section.text}}"></a>
+  <p class="bibtitle">{{section.text}}</p>
+  {%- for y in page.years %}
+
+    {%- comment -%}  Count bibliography in actual section and year {%- endcomment -%}
+    {%- capture citecount -%}
+    {%- bibliography_count -f {{site.scholar.bibliography}} -q {{section.bibquery}}[year={{y}}] -%}
+    {%- endcapture -%}
+
+    {%- comment -%} If exist bibliography in actual section and year, print {%- endcomment -%}
+    {%- if citecount !="0" %}
+
+      {% bibliography -f {{site.scholar.bibliography}} -q {{section.bibquery}}[year={{y}}] %}
+
+    {%- endif -%}
+
+  {%- endfor %}
+
+{%- endfor %}
+
+</div>

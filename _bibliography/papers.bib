@@ -368,3 +368,14 @@ X10's Global Load Balancing framework GLB implements a user-level task pool for 
 Scalability postulates fault tolerance to be effective. We consider a user-level fault tolerance technique to cope with permanent node failures. It is supported by X10, one of the major Partitioned Global Address Space (PGAS) languages. In Resilient X10, an exception is thrown when a place (node) fails. This paper investigates task pools, which are often used by irregular applications to balance their load. We consider global load balancing with one worker per place. Each worker maintains a private task pool and supports cooperative work stealing. Tasks may generate new tasks dynamically, are free of side-effects, and their results are combined by reduction. Our first contribution is a task pool algorithm that can handle permanent place failures. It is based on snapshots that are regularly written to other workers and are updated in the event of stealing. Second, we implemented the algorithm in the Global Load Balancing framework GLB, which is part of the standard library of X10. We ran experiments with the Unbalanced Tree Search (UTS) and Between ness Centrality (BC) benchmarks. With 64 places on 4 nodes, for instance, we observed an overhead of about 4% for using fault-tolerant GLB instead of GLB. The protocol overhead for a place failure was neglectable.
 }, }
 
+#######################################################################
+############# T A L K S ###############################################
+#######################################################################
+
+
+@misc{PosnerTalkKobe24,
+    author = {Jonas Posner},
+    title = {Elastic Runtimes and Applications for HPC Systems},
+    booktitle = {Workshop on Effective Use of Resources on the Computing Continuum},
+    year = {2024},
+    address = {Kobe (Japan)}, }
