@@ -1,5 +1,20 @@
 % Encoding: UTF-8
 
+@inproceedings{PosnerEvolvingDynRes24,
+    author = {Jonas Posner},
+    title = {The Impact of Evolving APGAS Programs on HPC Clusters},
+    booktitle = {Proceedings Euro-Par Parallel Processing Workshops (DynResHPC)},
+    year = {2024},
+    altmetric = {false},
+    bibtex_show = {true},
+    abstract = {
+    High-performance computing (HPC) clusters are traditionally managed statically, i.e., user jobs maintain a fixed number of computing nodes for their entire execution. This approach becomes inefficient with the increasing prevalence of dynamic and irregular workloads, which have unpredictable computation patterns that result in fluctuating resource needs at runtime. For instance, nodes cannot be released when they are
+not needed, limiting the overall supercomputer performance. However, the realization of jobs that can grow and shrink their number of node allocations at runtime is hampered by a lack of support in both resource managers and programming environments.
+This work leverages evolving programs that grow and shrink autonomously through automated decision-making, making them well-suited for dynamic and irregular workloads. The Asynchronous Many-Task (AMT) programming model has recently shown promise in this context. In AMT, computations are decomposed into many fine-grained tasks, enabling the runtime system to transparently migrate these tasks across nodes.
+Our study builds on the APGAS AMT runtime system, which supports evolving capabilities, i.e., handles process initialization and termination automatically and requires only minimal user code additions. We enable communication between APGAS and a prototype resource manager as well as extend the Easy-Backfilling job scheduling algorithm to support evolving jobs.
+We conduct extensive real-world job batch executions on 10 nodes—involving a mix of rigid, moldable, and evolving programs—to evaluate the impact of evolving APGAS programs on supercomputers. Our experimental results demonstrate a 23% reduction in job batch makespan and a 29% reduction in job turnaround time for evolving jobs.
+}, }
+
 @conference{PosnerWagomuISC24,
     author = {Jonas Posner and Patrick Finnerty},
     title = {Project Wagomu: Elastic HPC Resource Management},
