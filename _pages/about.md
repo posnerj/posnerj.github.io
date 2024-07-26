@@ -7,7 +7,7 @@ subtitle: Postdoctoral Researcher in High Performance Computing at the <a href='
 profile:
   align: right
   image: jonasposner.png
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
 #    <p>University of Kassel</p>
 #    <p>123 your address street</p>
