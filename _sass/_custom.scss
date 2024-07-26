@@ -35,6 +35,10 @@ html[data-theme='dark'] {
 
 }
 
+:root {
+  --global-divider-color: rgba(0, 0, 0, 0.5);
+}
+
 // Mobile devices. With class="hidden-mobile" the element not show
 @media (max-width: 576px) {
   .hidden-mobile {
