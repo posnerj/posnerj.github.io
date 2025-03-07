@@ -26,3 +26,5 @@ Currently, he is working on his habilitation as a postdoctoral researcher at the
 Jonas' research interests include load balancing, fault tolerance, and resource adaptivity for Asynchronous Many-Task (AMT) systems.
 More recently, he has focused on resource adaptivity in general to optimize the efficient use of supercomputing resources.
 His work covers a broad spectrum, including the development of advanced job scheduling algorithms, the improvement of application programming using AMT systems, and the interaction between resource managers and jobs.
+
+**My full Curriculum Vitae is available as a pdf here: *[Jonas Posner CV](https://posnerj.github.io/assets/pdf/jonasposner.pdf)***
