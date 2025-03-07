@@ -7,4 +7,4 @@ related_posts: false
 
 Our latest paper **Dynamic Resource Management: Comparison of Asynchronous Many-Task (AMT) and Dynamic Processes with PSets (DPP)** has been accepted for publication in the proceedings of WAMTA25!
 
-The slides are already online! https://doi.org/10.5281/zenodo.14902214
+The slides are already online! *[https://doi.org/10.5281/zenodo.14902214](https://doi.org/10.5281/zenodo.14902214)*
