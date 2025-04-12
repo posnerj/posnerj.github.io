@@ -219,8 +219,8 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: 
-  - ["_pages"]
+include: ["_pages"]
+
 exclude:
   - bin/
   - CONTRIBUTING.md
@@ -288,7 +288,7 @@ jekyll-minifier:
 # Jekyll Archives
 # -----------------------------------------------------------------------------
 
-jekyll-archives:
+jekyll-archives-v2:
   enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
   layouts:
     year: archive-year
