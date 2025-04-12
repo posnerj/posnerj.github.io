@@ -14,7 +14,7 @@ sections:
 <div class="publications">
 
 {%- for section in page.sections %}
-  {%- for y in page.years %}
+{%- for y in page.years %}
 
     {%- comment -%}  Count bibliography in actual section and year {%- endcomment -%}
     {%- capture citecount -%}
@@ -28,7 +28,7 @@ sections:
 
     {%- endif -%}
 
-  {%- endfor %}
+{%- endfor %}
 
 {%- endfor %}
 

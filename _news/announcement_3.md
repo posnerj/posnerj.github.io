@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My user experience abstract **Resource Adaptivity at Task-Level** was accepted for presentation at the *[7th Annual Parallel Applications Workshop, Alternatives To MPI+X (PAW-ATM)](https://sourceryinstitute.github.io/PAW/)* held in conjunction with SC24 in Atlanta.
+My user experience abstract **Resource Adaptivity at Task-Level** was accepted for presentation at the _[7th Annual Parallel Applications Workshop, Alternatives To MPI+X (PAW-ATM)](https://sourceryinstitute.github.io/PAW/)_ held in conjunction with SC24 in Atlanta.

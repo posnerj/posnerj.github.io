@@ -4,10 +4,10 @@
 
 // GLOBAL THEME
 
-html[data-theme='dark'] {
-  --global-bg-color: #000000;//#252525;
-  --global-theme-color: #B389F5;
-  --global-hover-color: #B389F5;
+html[data-theme="dark"] {
+  --global-bg-color: #000000; //#252525;
+  --global-theme-color: #b389f5;
+  --global-hover-color: #b389f5;
   --global-footer-bg-color: #2f2f2f;
   --global-footer-text-color: #abaaaa;
   --global-footer-link-color: #797979;
@@ -17,22 +17,20 @@ html[data-theme='dark'] {
    * CV
    **************************************************/
   .list-group-flush {
-
     > .list-group-item-cv {
       border: 1px solid #f8f9fa4f;
-      border-width: 0 0 1px!important;
+      border-width: 0 0 1px !important;
 
       &:last-child {
-        border-bottom-width: 0!important;
+        border-bottom-width: 0 !important;
       }
     }
   }
 
   .publications ol.bibliography li .abbr abbr,
   .publications ol.bibliography li .abbr abbr a {
-    color: var(--global-bg-color)!important;
+    color: var(--global-bg-color) !important;
   }
-
 }
 
 :root {
@@ -49,7 +47,7 @@ html[data-theme='dark'] {
   h2.year {
     color: var(--global-divider-color);
     border-bottom: 1px solid var(--global-divider-color);
-    margin-bottom: 2rem!important;
+    margin-bottom: 2rem !important;
     // reset
     border-top: 0 !important;
     padding-top: 0 !important;
@@ -59,7 +57,6 @@ html[data-theme='dark'] {
 
 // General
 
-
 // Title
 .title {
   font-family: "Roboto Slab", "Times New Roman", serif;
@@ -67,15 +64,13 @@ html[data-theme='dark'] {
 
 // About
 
-
 /*******************************************************************************
  * HEAD
  ******************************************************************************/
 // Social icons
 .navbar-brand.social {
-  font-size: 1.2rem!important;
+  font-size: 1.2rem !important;
 }
-
 
 /*******************************************************************************
  * Scholar / Bibliography
@@ -83,7 +78,7 @@ html[data-theme='dark'] {
 
 // Author font
 div.author {
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
 
 // Booktitle, journal, etc font
@@ -119,7 +114,6 @@ p.bibtitle {
 .highlight .k {
   color: rgb(0, 0, 255);
 }
-
 
 /*******************************************************************************
  * SOCIAL

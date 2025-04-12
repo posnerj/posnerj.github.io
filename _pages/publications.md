@@ -21,7 +21,8 @@ nav_order: 3
 <div class="publications">
 
 {%- for section in page.sections %}
-  <a id="{{section.text}}"></a>
+<a id="{{section.text}}"></a>
+
   <p class="bibtitle">{{section.text}}</p>
   {%- for y in page.years %}
 
@@ -37,7 +38,7 @@ nav_order: 3
 
     {%- endif -%}
 
-  {%- endfor %}
+{%- endfor %}
 
 {%- endfor %}
 
