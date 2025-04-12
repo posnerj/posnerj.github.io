@@ -91,6 +91,11 @@ jobs:
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
+          ruby --version
+          bundler --version
+          gem install bundler
+          bundle install
+          bundle list
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
