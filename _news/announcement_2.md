@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our article **The Impact of Evolving APGAS Programs on HPC Clusters** was accepted for presentation at the _3rd EuroHPC Workshop on Dynamic Resources in HPC
-(DynResHPC)_ held in conjunction with Euro-Par 2024.
+Our article **The Impact of Evolving APGAS Programs on HPC Clusters** was accepted for presentation at the _3rd EuroHPC Workshop on Dynamic Resources in HPC (DynResHPC)_ held in conjunction with Euro-Par 2024.
