@@ -21,7 +21,7 @@ social: true # includes social icons at the bottom of the page
 Jonas Posner is a dedicated computer scientist specializing in High-Performance Computing (HPC).
 Since 2025, Jonas serves as **Professor** of _Operating Systems and Parallel Processing_ at Fulda University of Applied Sciences, Germany.
 He received his Bachelor's and Master's degrees from the University of Kassel, Germany, where he also earned his Ph.D. in 2022.
-Afterward, he worked as a postdoctoraKl researcher and served as a substitute chair for the Software Engineering research group for one semester at the same university.
+Afterward, he worked as a postdoctoral researcher and served as a substitute chair for the Software Engineering research group for one semester at the same university.
 
 Jonas' research interests include load balancing, fault tolerance, and resource adaptivity for Asynchronous Many-Task (AMT) systems.
 More recently, his work has focused on resource adaptivity more broadly, aiming to optimize the efficient use of supercomputing resources.
