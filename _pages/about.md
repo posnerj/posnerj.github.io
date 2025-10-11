@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Professor in Computer Science (_Operating Systems and Parallel Processing_) at the <a href='https://www.hs-fulda.de/en/applied-computer-science'>Fulda University of Applied Sciences, Germany</a>.
+subtitle: Professor in Computer Science (Operating Systems and Parallel Processing) at the <a href='https://www.hs-fulda.de/en/applied-computer-science'>Fulda University of Applied Sciences, Germany</a>.
 
 profile:
   align: right
