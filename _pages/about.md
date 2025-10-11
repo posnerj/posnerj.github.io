@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Postdoctoral Researcher in High Performance Computing at the <a href='https://www.uni-kassel.de'>University of Kassel</a>.
+subtitle: Professor in Computer Science (Operating Systems and Parallel Processing) at the <a href='https://www.hs-fulda.de/en/applied-computer-science'>Fulda University of Applied Sciences</a>.
 
 profile:
   align: right
@@ -18,12 +18,15 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Jonas is a dedicated computer scientist specializing in High Performance Computing.
+Jonas Posner is a dedicated computer scientist specializing in High-Performance Computing (HPC).
+Since 2025, Jonas is a Professor of *Operating Systems and Parallel Processing* at Fulda University of Applied Sciences.
 He received his Bachelor's and Master's degrees from the University of Kassel, Germany, where he also earned his Ph.D. in 2022.
-Currently, he is working on his habilitation as a postdoctoral researcher at the same university.
+Afterward, he worked as a postdoctoral researcher and served as a substitute chair for the Software Engineering research group for one semester at the same university.
 
 Jonas' research interests include load balancing, fault tolerance, and resource adaptivity for Asynchronous Many-Task (AMT) systems.
-More recently, he has focused on resource adaptivity in general to optimize the efficient use of supercomputing resources.
-His work covers a broad spectrum, including the development of advanced job scheduling algorithms, the improvement of application programming using AMT systems, and the interaction between resource managers and jobs.
+More recently, his work has focused on resource adaptivity more broadly, aiming to optimize the efficient use of supercomputing resources.
+His research spans a wide range of topics, including the development of advanced job-scheduling algorithms, improving programmability and performance of AMT systems, and studying the interaction between resource managers and applications.
+
 
 **My full Curriculum Vitae is available as a pdf here: _[Jonas Posner CV](https://posnerj.github.io/assets/pdf/jonasposner.pdf)_**
+
