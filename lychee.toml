@@ -1,0 +1,14 @@
+# lychee.toml
+# -------------------------------------------------------------------
+# Exclude problematic domains that often block bots
+exclude = [
+    '^https://doi\\.org/.*',
+    '^https://link\\.springer\\.com/.*',
+]
+# -------------------------------------------------------------------
+
+# Optional: treat HTTP 403/406 as warnings instead of errors
+accept = [403, 406]
+
+# Optional: skip mailto: links
+exclude_mail = true
