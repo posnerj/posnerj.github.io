@@ -1,5 +1,16 @@
 % Encoding: UTF-8
 
+@article{DPPJournal,
+    author = {Jonas Posner and Tim Ellersiek and Nick Bietendorf and Dominik Huber and Martin Schreiber and Martin Schulz},
+    title = {{Toward Dynamic Resource Management: An Asynchronous Many-Task (AMT) Runtime System leveraging Dynamic Processes with PSets (DPP)}},
+    journal = {Springer Nature Computer Science},
+    year = {2025},
+    doi = {10.1007/s42979-025-04405-3},
+    altmetric = {false},
+    bibtex_show = {true},
+    abstract = {
+Dynamic resource management enables supercomputing applications to change resource allocations at runtime. This capability promises significant improvements in application efficiency and overall supercomputer utilization. However, adoption is limited by insufficient support in resource managers and programming environments. Furthermore, developing resource-flexible applications introduces significantly higher programming complexity than their static counterparts. While MPI extensions have been proposed for resource flexibility, significant programmability challenges persist. The “Dynamic Processes with PSets (DPP)”design principles define programming model agnostic abstractions for dynamic resource control, and have been prototypically implemented by extending Open MPI and OpenPMIx (termed MPI-DPP). MPI-DPP enables fine-grained process management but relies on low-level message-passing, complicating implementation of dynamic and irregular workloads. Asynchronous Many-Task (AMT) programming offers a compelling alternative. AMT splits computations into fine-grained tasks dynamically scheduled by the runtime system, enabling load balancing and responsiveness to resource changes. Although resource-flexible AMTs remain rare, GLB is a notable exception, offering automatic load balancing and dynamic resource capabilities. However, GLB is built on “APGAS for Java”, which is uncommon in HPC. We present DPP-GLB, a C++ AMT runtime that integrates GLB ’s high-level task abstraction and load balancing with the resource control capabilities of MPI-DPP. We evaluate DPP-GLB, GLB, and MPI-DPP on SuperMUC-NG, analyzing both programming complexity and runtime performance. Results show that GLB is easy to use, featuring built-in load balancing and resource flexibility. MPI-DPP offers superior performance for node changes, albeit at the cost of increased programming complexity. DPP-GLB achieves a balance of low programming complexity and efficient, scalable dynamic resource support.}, }
+
 @inproceedings{PAW25,
     author = {Mia Reitz and Jonas Posner},
     title = {{Stackless vs. Stackful Coroutines: A Comparative Study for RDMA-based Asynchronous Many-Task (AMT) Runtimes}},
