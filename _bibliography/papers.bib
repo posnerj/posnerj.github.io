@@ -25,6 +25,17 @@ Dynamic resource management enables supercomputing applications to change resour
 This work directly compares stackful and stackless coroutines as continuation implementations in a cluster environment using RDMA-based coordinated work stealing. We implement and evaluate two functionally equivalent AMT runtimes for a fine-grained, recursive workload: one using traditional stackful coroutines, and another using C++20 stackless coroutines.
 Our results show that both approaches yield nearly identical overall performance for small-state tasks. Stackful coroutines are created 2.4x faster, while stackless coroutines switch context 3.5x faster and have smaller frames. However, the smaller frame size of stackless coroutines does not significantly reduce communication time, which is dominated by network latency. We conclude that both coroutine types are viable, with stackless coroutines offering advantages as task state increases.},}
 
+@inproceedings{RothJamesPosner2026,
+    author = {Anna-Lena Roth and David James and Jonas Posner and Michael Kuhn},
+    title = {Performance Analysis in Parallel Programming Education: A Comparative Usability Study},
+    year = {2025},
+    booktitle = {PARS-Mitteilungen},
+    publisher = {Gesellschaft für Informatik e.V., Fachgruppe PARS},
+    altmetric = {false},
+    bibtex_show = {true},
+    abstract = {The use of high-performance clusters in parallel programming education can be challenging. Learners need prior knowledge of SSH, Linux commands, and workload management to execute their MPI programs on a cluster. Additionally, performance analysis, which is crucial for improving program behavior and identifying errors, requires an understanding of instrumentation, measurement, and typical performance issues in parallel programs. This requirement impedes beginners from benefiting from performance visualization. To make these instruments available to beginners in parallel programming, we are developing EduMPI. This novel learning support tool allows learners to execute MPI programs in a real environment on high-performance clusters from an early stage of parallel programming education. EduMPI helps learners to gain visual insights into their program’s performance through analysis at runtime.},
+}
+
 @inproceedings{Carla25,
     author = {Patrick Zojer and Jonas Posner and Taylan \"Ozden},
     title = {{Evaluating Malleable Job Scheduling in HPC Clusters using Real-World Workloads}},
@@ -457,6 +468,16 @@ Scalability postulates fault tolerance to be effective. We consider a user-level
 #######################################################################
 ############# T A L K S ###############################################
 #######################################################################
+
+@misc{PosnerTalkPAW25,
+    author = {Jonas Posner},
+    title = {Stackless vs. Stackful Coroutines: A Comparative Study for RDMA-based Asynchronous Many-Task (AMT) Runtimes},
+    booktitle = {Supercomputing (SC) Workshops (PAW-ATM)},
+    year = {2025},
+    address = {St. Louis (U.S.)},
+    annote = {Paper Presentation},
+    slides = {https://doi.org/10.5281/zenodo.17625006}, }
+
 
 @misc{PosnerTalkCarla25,
     author = {Jonas Posner},
