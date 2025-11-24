@@ -20,7 +20,7 @@ Dynamic resource management enables supercomputing applications to change resour
     altmetric = {false},
     bibtex_show = {true},
     slides = {https://doi.org/10.5281/zenodo.17625006},
-    doi = {10.1145/3731599.376750},
+    doi = {10.1145/3731599.3767502},
     abstract = {Asynchronous Many-Task (AMT) runtimes manage parallelism by suspending and migrating tasks between processes, with their state captured in continuations. The efficiency of suspending, migrating, and resuming these continuations is critical to application performance.
 This work directly compares stackful and stackless coroutines as continuation implementations in a cluster environment using RDMA-based coordinated work stealing. We implement and evaluate two functionally equivalent AMT runtimes for a fine-grained, recursive workload: one using traditional stackful coroutines, and another using C++20 stackless coroutines.
 Our results show that both approaches yield nearly identical overall performance for small-state tasks. Stackful coroutines are created 2.4x faster, while stackless coroutines switch context 3.5x faster and have smaller frames. However, the smaller frame size of stackless coroutines does not significantly reduce communication time, which is dominated by network latency. We conclude that both coroutine types are viable, with stackless coroutines offering advantages as task state increases.},}
