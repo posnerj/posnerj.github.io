@@ -350,6 +350,16 @@
             },
           },
         {%- endif -%}
+        {%- if site.zenodo_url_two -%}
+          {
+            id: 'socials-work',
+            title: 'Zenodo',
+            section: 'Socials',
+            handler: () => {
+              window.open("{{ site.zenodo_url_two }}", "_blank");
+            },
+          },
+        {%- endif -%}
         {%- if site.wikidata_id -%}
           {
             id: 'socials-wikidata',
