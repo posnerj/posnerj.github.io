@@ -1,5 +1,18 @@
 % Encoding: UTF-8
 
+@inproceedings{ItoTaskbench26,
+    author = {Torben R. Lahnor and Mia Reitz and Jonas Posner and Patrick Diehl},
+    title = {{Exploring Performance-Productivity Trade-offs in AMT Runtimes: A Task Bench Study of Itoyori, ItoyoriFBC, HPX, and MPI}},
+    booktitle = {Workshop on Asynchronous Many-Task Systems and Applications (WAMTA)},
+    year = {2026},
+    slides = {https://doi.org/10.5281/zenodo.18660065},
+    preprint = {https://arxiv.org/abs/2601.14608},
+    altmetric = {false},
+    bibtex_show = {true},
+    abstract = {Asynchronous Many-Task (AMT) runtimes offer a productive alternative to the Message Passing Interface (MPI). However, the diverse AMT landscape makes fair comparisons challenging. Task Bench, proposed by Slaughter et al., addresses this through a parameterized framework for evaluating parallel programming systems. This work integrates two recent cluster AMTs, Itoyori and ItoyoriFBC, into Task Bench for the first time. Itoyori employs a Partitioned Global Address Space (PGAS) model with RDMA-based work stealing, while ItoyoriFBC extends it with future-based synchronization. We compare Task Bench implementations using MPI, HPX, Itoyori, and ItoyoriFBC, evaluating performance and programmer productivity. Each implementation reflects the programming style it naturally supports: Bulk-Synchronous Parallel (BSP) for MPI, parallel loops for HPX, and nested fork-join and future-based cooperation for Itoyori and ItoyoriFBC, respectively. Performance is assessed across compute-bound kernels, weak scaling, and imbalanced and communication-intensive patterns. We use application efficiency, i.e., the percentage of maximum performance achieved, and Minimum Effective Task Granularity (METG), i.e., the smallest task duration before runtime overheads dominate. Productivity is quantified using Lines of Code (LOC) and Number of Library Constructs (NLC). Our results reveal distinct trade-offs. The MPI implementation achieves highest efficiency for regular, communication-light workloads but requires verbose, low-level code. The HPX implementation maintains stable efficiency under load imbalance, yet ranks last in productivity, showing that AMTs do not inherently guarantee improved productivity. The Itoyori implementation achieves highest efficiency in communication-intensive configurations while leading in productivity. The ItoyoriFBC implementation exhibits slightly lower efficiency than Itoyori, though its future-based synchronization offers potential for irregular workloads.
+},
+}
+
 @article{DPPJournal,
     author = {Jonas Posner and Tim Ellersiek and Nick Bietendorf and Dominik Huber and Martin Schreiber and Martin Schulz},
     title = {{Toward Dynamic Resource Management: An Asynchronous Many-Task (AMT) Runtime System leveraging Dynamic Processes with PSets (DPP)}},
