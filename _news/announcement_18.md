@@ -5,7 +5,7 @@ inline: true
 related_posts: false
 ---
 
-Yesterday, I had the pleasure of giving a talk at the _[Workshop on Asynchronous Many-Task Systems and Applications (WAMTA)](https://wamta26.github.io/) in Garchingen, Germany, on our latest paper, **Exploring Performance-Productivity Trade-offs in AMT Runtimes: A Task Bench Study of Itoyori, ItoyoriFBC, HPX, and MPI**.
+Yesterday, I had the pleasure of giving a talk at the [Workshop on Asynchronous Many-Task Systems and Applications (WAMTA)](https://wamta26.github.io/) in Garchingen, Germany, on our latest paper, **Exploring Performance-Productivity Trade-offs in AMT Runtimes: A Task Bench Study of Itoyori, ItoyoriFBC, HPX, and MPI**.
 
 Slides: _[10.5281/zenodo.18660065](https://doi.org/10.5281/zenodo.18660065)_
 
