@@ -1,0 +1,210 @@
+# Talk and conference locations with coordinates.
+# "Online" events are excluded from the map.
+
+- city: "Garching"
+  country: "Germany"
+  lat: 48.249
+  lng: 11.651
+  talks:
+    - title: "Exploring Performance-Productivity Trade-offs in AMT Runtimes: A Task Bench Study of Itoyori, ItoyoriFBC, HPX, and MPI"
+      venue: "Workshop on Asynchronous Many-Task Systems and Applications (WAMTA)"
+      year: 2026
+      type: "Paper Presentation"
+
+- city: "St. Louis"
+  country: "U.S."
+  lat: 38.627
+  lng: -90.199
+  talks:
+    - title: "Stackless vs. Stackful Coroutines: A Comparative Study for RDMA-based Asynchronous Many-Task (AMT) Runtimes"
+      venue: "Supercomputing (SC) Workshops (PAW-ATM)"
+      year: 2025
+      type: "Paper Presentation"
+    - title: "Dynamic Resource Management: Comparison of Asynchronous Many-Task (AMT) and Dynamic Processes with PSets (DPP)"
+      venue: "Workshop on Asynchronous Many-Task Systems and Applications (WAMTA)"
+      year: 2025
+      type: "Paper Presentation"
+    - title: "Lead Student Volunteer"
+      venue: "Supercomputing Conference (SC21)"
+      year: 2021
+      type: "Conference Attendance"
+
+- city: "Kingston"
+  country: "Jamaica"
+  lat: 18.017
+  lng: -76.810
+  talks:
+    - title: "Evaluating Malleable Job Scheduling in HPC Clusters using Real-World Workloads"
+      venue: "Latin American High Performance Computing Conference (CARLA)"
+      year: 2025
+      type: "Paper Presentation"
+
+- city: "Stuttgart"
+  country: "Germany"
+  lat: 48.776
+  lng: 9.183
+  talks:
+    - title: "Unlocking Dynamic HPC Resources with Task-Based Runtime Systems"
+      venue: "Institute for Parallel and Distributed Systems"
+      year: 2025
+      type: "Invited Talk"
+
+- city: "Los Alamos"
+  country: "U.S."
+  lat: 35.888
+  lng: -106.306
+  talks:
+    - title: "Transparent Resource Adaptivity for Task-Based Applications on Supercomputers"
+      venue: "Advances in Applied Computer Science Invited Speaker Series"
+      year: 2025
+      type: "Invited Talk"
+
+- city: "Atlanta"
+  country: "U.S."
+  lat: 33.749
+  lng: -84.388
+  talks:
+    - title: "Resource Adaptivity at Task-Level"
+      venue: "Supercomputing (SC) Workshops (PAW-ATM)"
+      year: 2024
+      type: "Presentation"
+
+- city: "Madrid"
+  country: "Spain"
+  lat: 40.417
+  lng: -3.704
+  talks:
+    - title: "The Impact of Evolving APGAS Programs on HPC Clusters"
+      venue: "Euro-Par Parallel Processing Workshops (DynResHPC)"
+      year: 2024
+      type: "Paper Presentation"
+
+- city: "Hamburg"
+  country: "Germany"
+  lat: 53.551
+  lng: 9.994
+  talks:
+    - title: "Project Wagomu: Elastic HPC Resource Management"
+      venue: "ISC High Performance Conference"
+      year: 2024
+      type: "Poster Presentation"
+    - title: "Asynchronous Many-Tasking (AMT): Load Balancing, Fault Tolerance, Resource Elasticity"
+      venue: "ISC High Performance Conference"
+      year: 2022
+      type: "Poster Presentation"
+
+- city: "Frankfurt"
+  country: "Germany"
+  lat: 50.110
+  lng: 8.682
+  talks:
+    - title: "Student Volunteer"
+      venue: "ISC High Performance Conference (ISC19)"
+      year: 2019
+      type: "Conference Attendance"
+
+- city: "Kassel"
+  country: "Germany"
+  lat: 51.313
+  lng: 9.497
+  talks:
+    - title: "Load Balancing, Fault Tolerance, and Resource Elasticity for Asynchronous Many-Task Systems"
+      venue: "Ph.D. Disputation, University of Kassel"
+      year: 2022
+      type: "Ph.D. Defense"
+
+- city: "Kobe"
+  country: "Japan"
+  lat: 34.690
+  lng: 135.196
+  talks:
+    - title: "Elastic Runtimes and Applications for HPC Systems"
+      venue: "Workshop on Effective Use of Resources on the Computing Continuum"
+      year: 2024
+      type: "Invited Talk"
+
+- city: "Knoxville"
+  country: "U.S."
+  lat: 35.961
+  lng: -83.921
+  talks:
+    - title: "Evolving APGAS Programs: Automatic and Transparent Resources Adjustments at Runtime"
+      venue: "Workshop on Asynchronous Many-Task Systems and Applications (WAMTA)"
+      year: 2024
+      type: "Paper Presentation"
+
+- city: "Limassol"
+  country: "Cyprus"
+  lat: 34.679
+  lng: 33.044
+  talks:
+    - title: "Enhancing Supercomputer Performance with Malleable Job Scheduling Strategies"
+      venue: "Euro-Par Workshops (PECS)"
+      year: 2023
+      type: "Paper Presentation"
+
+- city: "Dallas"
+  country: "U.S."
+  lat: 32.777
+  lng: -96.797
+  talks:
+    - title: "Load Balancing, Fault Tolerance, and Resource Elasticity for Asynchronous Many-Task Systems"
+      venue: "Supercomputing (SC), Doctoral Showcases"
+      year: 2022
+      type: "Paper Presentation"
+    - title: "Student Volunteer"
+      venue: "Supercomputing Conference (SC18)"
+      year: 2018
+      type: "Conference Attendance"
+
+- city: "Denver"
+  country: "U.S."
+  lat: 39.739
+  lng: -104.990
+  talks:
+    - title: "Comparison of the HPC and Big Data Java Libraries Spark, PCJ and APGAS"
+      venue: "Supercomputing (SC) Workshops (PAW-ATM)"
+      year: 2019
+      type: "Paper Presentation"
+    - title: "Lead Student Volunteer"
+      venue: "Supercomputing Conference (SC19)"
+      year: 2019
+      type: "Conference Attendance"
+    - title: "Student Volunteer"
+      venue: "Supercomputing Conference (SC17)"
+      year: 2017
+      type: "Conference Attendance"
+
+- city: "Orleans"
+  country: "France"
+  lat: 47.903
+  lng: 1.909
+  talks:
+    - title: "A Selective and Incremental Backup Scheme for Task Pools"
+      venue: "International Conference on High Performance Computing & Simulation (HPCS)"
+      year: 2018
+      type: "Paper Presentation"
+
+- city: "Lublin"
+  country: "Poland"
+  lat: 51.247
+  lng: 22.568
+  talks:
+    - title: "A Combination of Intra- and Inter-place Work Stealing for the APGAS Library"
+      venue: "Parallel Processing and Applied Mathematics (PPAM)"
+      year: 2017
+      type: "Paper Presentation"
+
+- city: "Lake Buena Vista"
+  country: "U.S."
+  lat: 28.374
+  lng: -81.521
+  talks:
+    - title: "A Generic Reusable Java Framework for Fault-Tolerant Parallelization with the Task Pool Pattern"
+      venue: "Ph.D. Forum International Parallel and Distributed Processing (IPDPS)"
+      year: 2017
+      type: "Poster Presentation"
+    - title: "Fault Tolerance for Cooperative Lifeline-Based Global Load Balancing in Java with APGAS and Hazelcast"
+      venue: "International Parallel and Distributed Processing (IPDPS) Workshops (APDCM)"
+      year: 2017
+      type: "Paper Presentation"

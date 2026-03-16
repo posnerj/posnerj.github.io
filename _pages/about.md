@@ -14,6 +14,8 @@ profile:
 #    <p>Your City, State 12345</p>
 
 news: true # includes a list of news items
+talks_map: true # includes a world map of talk locations
+map: true # loads Leaflet.js library
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---

@@ -64,6 +64,35 @@ html[data-theme="dark"] {
 
 // About
 
+// Talks map on about page
+.talks-map {
+  height: 450px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 0.25rem;
+  z-index: 0;
+}
+
+.talks-map-popup {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #000;
+
+  strong,
+  em,
+  span,
+  div,
+  hr {
+    color: #000;
+  }
+}
+
+@media (max-width: 576px) {
+  .talks-map {
+    height: 300px;
+  }
+}
+
 /*******************************************************************************
  * HEAD
  ******************************************************************************/

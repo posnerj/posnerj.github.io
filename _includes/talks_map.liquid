@@ -1,0 +1,73 @@
+<div id="talks-map" class="talks-map"></div>
+
+<script>
+  document.addEventListener('readystatechange', () => {
+    if (document.readyState === 'complete') {
+      // Fix Leaflet marker icon paths when loaded from CDN
+      delete L.Icon.Default.prototype._getIconUrl;
+      L.Icon.Default.mergeOptions({
+        iconUrl: '{{ site.third_party_libraries.leaflet.url.images }}marker-icon.png',
+        iconRetinaUrl: '{{ site.third_party_libraries.leaflet.url.images }}marker-icon-2x.png',
+        shadowUrl: '{{ site.third_party_libraries.leaflet.url.images }}marker-shadow.png',
+      });
+
+      var map = L.map('talks-map', {
+        scrollWheelZoom: true
+      });
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        maxZoom: 20,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+      }).addTo(map);
+
+      var locations = [
+        {% for loc in site.data.talks_map %}
+        {
+          city: {{ loc.city | jsonify }},
+          country: {{ loc.country | jsonify }},
+          lat: {{ loc.lat }},
+          lng: {{ loc.lng }},
+          talks: [
+            {% for talk in loc.talks %}
+            {
+              title: {{ talk.title | jsonify }},
+              venue: {{ talk.venue | jsonify }},
+              year: {{ talk.year }},
+              type: {{ talk.type | jsonify }}
+            }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          ]
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ];
+
+      var markers = [];
+
+      locations.forEach(function(loc) {
+        var popupContent = '<div class="talks-map-popup">';
+        popupContent += '<strong>' + loc.city + ', ' + loc.country + '</strong>';
+        popupContent += '<hr style="margin: 4px 0;">';
+
+        loc.talks.sort(function(a, b) { return b.year - a.year; });
+
+        loc.talks.forEach(function(talk) {
+          popupContent += '<div style="margin-bottom: 6px;">';
+          popupContent += '<span style="font-size: 0.85em; color: #888;">' + talk.year + ' &middot; ' + talk.type + '</span><br>';
+          popupContent += '<em>' + talk.title + '</em><br>';
+          popupContent += '<span style="font-size: 0.85em;">' + talk.venue + '</span>';
+          popupContent += '</div>';
+        });
+
+        popupContent += '</div>';
+
+        var marker = L.marker([loc.lat, loc.lng]).addTo(map);
+        marker.bindPopup(popupContent, { maxWidth: 350, maxHeight: 250 });
+        markers.push(marker);
+      });
+
+      var group = L.featureGroup(markers);
+      map.fitBounds(group.getBounds().pad(0.15));
+    }
+  });
+</script>
