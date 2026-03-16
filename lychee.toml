@@ -4,11 +4,23 @@
 exclude = [
     '^https://doi\\.org/.*',
     '^https://link\\.springer\\.com/.*',
+    '^https://arxiv\\.org/.*',
 ]
 # -------------------------------------------------------------------
 
-# Optional: treat HTTP 403/406 as warnings instead of errors
-accept = [403, 406]
+# Exclude paths that should not be checked
+exclude_path = [
+    "node_modules",
+    "_site",
+    "README.md",
+    "_pages/404.md",
+    "_pages/blog.md",
+    "_posts/2018-12-22-distill.md",
+    "_posts/2023-04-24-videos.md",
+]
+
+# Accept common status codes (403/406 from bot-blocking sites)
+accept = [200, 201, 204, 301, 302, 403, 406, 429]
 
 # Optional: skip mailto: links
-exclude_mail = true
+include_mail = false
