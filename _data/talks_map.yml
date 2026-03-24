@@ -1,6 +1,16 @@
 # Talk and conference locations with coordinates.
 # "Online" events are excluded from the map.
 
+- city: "Darmstadt"
+  country: "Germany"
+  lat: 49.8728
+  lng: 8.6512
+  talks:
+    - title: "GreenHPC: Scheduler-Integrated Node Power Management for Energy-Efficient Supercomputing"
+      venue: "Department of Computer Science, Parallel Programming"
+      year: 2026
+      type: "Invited Talk"
+
 - city: "Garching"
   country: "Germany"
   lat: 48.249
