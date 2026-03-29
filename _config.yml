@@ -234,10 +234,13 @@ exclude:
   - INSTALL.md
   - LICENSE
   - lighthouse_results/
+  - node_modules/
+  - "**/node_modules/"
   - package.json
   - package-lock.json
   - purgecss.config.js
   - README.md
+  - README_LOCAL.md
   - readme_preview/
   - vendor
 #  - _pages/about_posner.md

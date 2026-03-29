@@ -5,6 +5,7 @@ exclude = [
     '^https://doi\\.org/.*',
     '^https://link\\.springer\\.com/.*',
     '^https://arxiv\\.org/.*',
+    '^https://jsonresume\\.org',
 ]
 # -------------------------------------------------------------------
 
@@ -13,6 +14,7 @@ exclude_path = [
     "node_modules",
     "_site",
     "README.md",
+    "README_LOCAL.md",
     "_pages/404.md",
     "_pages/blog.md",
     "_posts/2018-12-22-distill.md",
