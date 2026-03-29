@@ -4,7 +4,7 @@ permalink: /student-theses/
 title: Student Theses, Projects & Internships
 nav: true
 nav_title: Theses & Projects
-nav_order: 8
+nav_order: 7
 toc:
   sidebar: left
 ---
