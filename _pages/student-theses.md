@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /student-theses/
-title: Student Theses, Projects & Internships
+title: Student Theses, Projects, and Internships
 nav: true
 nav_title: Theses & Projects
 nav_order: 7
@@ -18,6 +18,10 @@ toc:
     margin-top: 2.5rem;
   }
 </style>
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/img/FuldaHPC_Color_Full_Circle.png" alt="Fulda HPC Research Group" style="width: 180px;">
+</div>
 
 ## Overview
 
@@ -41,7 +45,7 @@ My research focuses on making supercomputers more efficient and easier to progra
 - Job Scheduling
 - AI-assisted Vibe Coding
 - Heterogeneous Computing Resources
-- I/O
+- Parallel I/O
 
 If none of the listed topics match your interests, but you have an idea in a related area, feel free to reach out — I am happy to discuss custom proposals. **Please get in touch early**.
 
@@ -115,7 +119,7 @@ The following are initial topic proposals intended to define a research directio
   <p style="margin-top: 0.5rem; margin-bottom: 0;">Extend an existing AMT runtime to schedule tasks on heterogeneous hardware (CPU + GPU), implementing placement heuristics that minimize data movement and maximize throughput.</p>
 </div>
 
-### I/O
+### Parallel I/O
 
 <div style="margin-bottom: 1rem; padding: 1rem; background: var(--global-code-bg-color); border-radius: 8px;">
   <strong>I/O-aware Task Scheduling for Data-intensive HPC Applications</strong>
@@ -147,7 +151,18 @@ The following are initial topic proposals intended to define a research directio
 
 <div style="margin-bottom: 0.75rem; padding: 1rem; background: var(--global-code-bg-color); border-radius: 8px;">
   <strong>1 &nbsp;·&nbsp; Application</strong>
-  <p style="margin-top: 0.5rem; margin-bottom: 0;">Get in touch <strong>early</strong>. Send an email to <a href="mailto:jonas.posner@cs.hs-fulda.de">jonas.posner@cs.hs-fulda.de</a> with your topic preference, thesis type (B.Sc./M.Sc.), transcript of records, and preferred start date.</p>
+  <div style="margin-top: 0.5rem;">
+    Get in touch <strong>early</strong>. Send an email to <a href="mailto:jonas.posner@cs.hs-fulda.de">jonas.posner@cs.hs-fulda.de</a> with:
+    <ul style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+      <li>Thesis type (B.Sc./M.Sc.)</li>
+      <li>Transcript of records</li>
+      <li>Preferred start date</li>
+      <li>Your experience in parallel programming</li>
+      <li>Which research area from my list interests you</li>
+      <li>A concrete initial idea for a topic within that area</li>
+    </ul>
+    Before applying, please review the <a href="#completed-theses">completed theses</a> to get an idea of the scope and quality expectations.
+  </div>
 </div>
 
 <div style="margin-bottom: 0.75rem; padding: 1rem; background: var(--global-code-bg-color); border-radius: 8px;">
@@ -157,7 +172,7 @@ The following are initial topic proposals intended to define a research directio
 
 <div style="margin-bottom: 0.75rem; padding: 1rem; background: var(--global-code-bg-color); border-radius: 8px;">
   <strong>3 &nbsp;·&nbsp; Exposé</strong>
-  <p style="margin-top: 0.5rem; margin-bottom: 0;">You write a short exposé (2–3 pages) covering: problem statement and motivation, objectives and research questions, planned methodology, and a rough timeline. This serves as the basis for the official registration.</p>
+  <p style="margin-top: 0.5rem; margin-bottom: 0;">You write a short exposé (2 pages) covering: problem statement and motivation, objectives and research questions, planned methodology, and a rough timeline. This serves as the basis for the official registration.</p>
 </div>
 
 <div style="margin-bottom: 0.75rem; padding: 1rem; background: var(--global-code-bg-color); border-radius: 8px;">
@@ -229,3 +244,58 @@ Topics come from the same research areas as theses. If you are interested, reach
 - Assessment is based on both the report and the employment reference.
 
 **Note on supervision:** I supervise internship reports if the topic in industry aligns with my research interests (Parallel Programming, HPC, Supercomputing, etc.). Please get in touch **before your internship starts** to confirm supervision. The [application process](#process) is the same as for theses.
+
+---
+
+## Completed Theses
+
+The following theses were completed during my time as a researcher at the University of Kassel (2018-2025). I supervised and/or reviewed these works.
+
+### 2026
+
+- **Simulationsbasierte Analyse des Energieverbrauchs von HPC-Systemen mit elastischen Jobs und Knotenabschaltung** — Mike Karabet (B.Sc., 2026) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=41002&token=d63ed21121224d8951d466e694bbc10eb63fd2a6)]
+
+### 2025
+
+- **Evaluierung LLM-generierten parallelen Codes in der Programmiersprache Chapel** — Nils Schintze (B.Sc., 2025) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=40885&token=c3de50d4bc0fcd8727ea8df3be4734140598b6b5)]
+- **Entwicklung und Evaluation eines task-basierten Laufzeitsystems mit dynamischer Ressourcenverwaltung** — Tim Ellersiek (M.Sc., 2025) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=40732&token=ba951274ebca3693bfcba2aa4174feef497f65dc)]
+- **Evaluation of the multithreaded runtime system Itoyori using Task Bench** — Torben Lahnor (M.Sc., 2025) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=40727&token=97a2de5fff6672659b6981f0effc47ccb87dae5e)]
+- **Simulation and Evaluation of evolving Workloads** - Kapil Karki (B.Sc., 2025)
+- **Simulating Malleable Job Scheduling Algorithms using Real-World Supercomputer Trace Logs** - Patrick Zojer (B.Sc., 2025)
+- **Elastisches Ressourcenmanagement: Vergleich von Asynchronous Many-Task (AMT) und Dynamic Processes with PSets (DPP)** - Nick Bietendorf (B.Sc., 2025)
+- **Evaluation von Gemini–generierten End–To–End und Unit Tests für Webanwendungen** - Marius Tews (B.Sc., 2025)
+
+### 2024
+
+- **Entwurf und Entwicklung einer Emulation von Materialflüssen auf virtuellen Fertigungsanlagen** — Larson Schneider (B.Sc., 2024)
+- **Ressourcenelastizität für das task-basierte parallele Programmiersystem APGAS** — Raoul W. Goebel (B.Sc., 2024) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=39697&token=b2d0e6cddb934bf89212a0ddf72449a41bf8ab20)]
+
+### 2023
+
+- **TasGPI: A Global Load Balancing Framework for C++** — Adrian Steinitz (M.Sc., 2023) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=39558&token=4722930399b6f79331c0f9a29fb014eaa0e57fbe)]
+- **Prototypische Entwicklung eines Schedulers für Malleable-Jobs** — Janek Bürger (B.Sc., 2023) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=39497&token=a64d87b7c61780498d79ac0da88aa877e3cbfb99)]
+- **Weiterentwicklung und Evaluation von Scheduling-Algorithmen für elastische Jobs im High-Performance-Computing** — Fabian Hupfeld (B.Sc., 2023) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=39110&token=aadbd300129c78cb1fc32f3b00c7f880fc2915db)]
+- **Benchmarking von Virtuellen Threads in Java 19** — Marco Spöth (B.Sc., 2023) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=38971&token=1ca309321ef01d96c6a89ba7215ced207aac8e40)]
+
+### 2022
+
+- **Performanceevaluierung des Java-Parallelisierungs Frameworks APGAS mit dem Benchmark-System Task Bench** — Torben R. Lahnor (B.Sc., 2022) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=2603&token=ab506dfce87c6cdd03a0384e1f72c8b6c2db8a9f)]
+
+### 2020
+
+- **Entwicklung einer Netzwerkschicht für ein Java-basiertes Programmiersystem aus dem Bereich des Hochleistungsrechnens** — Steve Hildebrandt (M.Sc., 2020) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=1598&token=b9d3feb5528ef54129d4ea08ab6abb38d6b6af9e)]
+- **Dynamisches Hinzufügen und Entfernen von Places innerhalb der Global Load-Balancing Runtime von APGAS** — Jonas Scherbaum (M.Sc., 2020) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=1600&token=81f782bdc98f1d064b53b300acdac4dd5485aa54)]
+- **Protokollierung und Visualisierung des Laufzeitverhaltens einer Taskpool-Implementierung** — Jan Bingemann (B.Sc., 2020) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=1603&token=53c65a49d08ad64500865b9dd928ed5befe8fccc)]
+
+### 2019
+
+- **Vergleich zwischen APGAS und Akka** — Lukas Ried (B.Sc., 2019)
+- **Design and Evaluation of a Work Stealing-Based Fault Tolerance Scheme for Task Pools** — Mia Reitz (M.Sc., 2019)
+- **APGAS und Charm++ im Vergleich** — Aron Bollmann (B.Sc., 2019)
+- **Isolierung von APGAS Benchmarks unter Anwendung von Containern in einer HPC-Umgebung** — Fabian Wurmbach (B.Sc., 2019) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=1601&token=04f6efe99a3925c426fb7b63b6459c4511d04bac)]
+- **Nutzung von Fibers als Ersatz für Threads im Laufzeitsystem der APGAS-Bibliohek für Java** — Matthias Hartmann (M.Sc., 2019)
+
+### 2018
+
+- **An Asynchronous Backup Scheme Tracking Work-Stealing for Reduction-Based Task Pools** — Mia Reitz (B.Sc., 2018)
+- **Benchmarks für das taskbasierte parallele Programmiersystem APGAS** — Steve Hildebrandt (B.Sc., 2018)
