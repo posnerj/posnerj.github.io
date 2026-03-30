@@ -155,7 +155,6 @@ The following are initial topic proposals intended to define a research directio
     Get in touch <strong>early</strong>. Send an email to <a href="mailto:jonas.posner@cs.hs-fulda.de">jonas.posner@cs.hs-fulda.de</a> with:
     <ul style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
       <li>Thesis type (B.Sc./M.Sc.)</li>
-      <li>Transcript of records</li>
       <li>Preferred start date</li>
       <li>Your experience in parallel programming</li>
       <li>Which research area from my list interests you</li>
@@ -261,7 +260,7 @@ The following theses were completed during my time as a researcher at the Univer
 - **Entwicklung und Evaluation eines task-basierten Laufzeitsystems mit dynamischer Ressourcenverwaltung** — Tim Ellersiek (M.Sc., 2025) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=40732&token=ba951274ebca3693bfcba2aa4174feef497f65dc)]
 - **Evaluation of the multithreaded runtime system Itoyori using Task Bench** — Torben Lahnor (M.Sc., 2025) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=40727&token=97a2de5fff6672659b6981f0effc47ccb87dae5e)]
 - **Simulation and Evaluation of evolving Workloads** - Kapil Karki (B.Sc., 2025)
-- **Simulating Malleable Job Scheduling Algorithms using Real-World Supercomputer Trace Logs** - Patrick Zojer (B.Sc., 2025)
+- **Simulating Malleable Job Scheduling Algorithms using Real-World Supercomputer Trace Logs** - Patrick Zojer (B.Sc., 2025) [[PDF](/assets/theses/2025_BSc_Thesis_PatrickZojer.pdf)]
 - **Elastisches Ressourcenmanagement: Vergleich von Asynchronous Many-Task (AMT) und Dynamic Processes with PSets (DPP)** - Nick Bietendorf (B.Sc., 2025)
 - **Evaluation von Gemini–generierten End–To–End und Unit Tests für Webanwendungen** - Marius Tews (B.Sc., 2025)
 
