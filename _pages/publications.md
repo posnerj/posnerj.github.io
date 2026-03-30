@@ -2,7 +2,6 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Publications by categories in reversed chronological order.
 sections:
   - bibquery: "@article"
     text: "Journal Articles"
@@ -17,6 +16,8 @@ social: true
 nav: true
 nav_order: 3
 ---
+
+Publications by categories in reversed chronological order.
 
 <div class="publications">
 
