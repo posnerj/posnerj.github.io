@@ -3,7 +3,7 @@ layout: page
 permalink: /student-theses/
 title: Student Theses, Projects, and Internships
 nav: true
-nav_title: Theses & Projects
+nav_title: Student Information
 nav_order: 7
 toc:
   sidebar: left
