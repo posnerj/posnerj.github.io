@@ -196,7 +196,7 @@ The following are initial topic proposals intended to define a research directio
 
 <div style="margin-bottom: 0.75rem; padding: 1rem; background: var(--global-code-bg-color); border-radius: 8px;">
   <strong>7 &nbsp;·&nbsp; Submission</strong>
-  <p style="margin-top: 0.5rem; margin-bottom: 0;">You submit the final thesis (PDF to supervisor + bound copy at the examination office if required) by the official deadline. All code and artefacts must be submitted alongside the thesis.</p>
+  <p style="margin-top: 0.5rem; margin-bottom: 0;">You must submit the final thesis to the SSC by the official deadline. All code and artefacts must be submitted alongside the thesis.</p>
 </div>
 
 <div style="margin-bottom: 0.75rem; padding: 1rem; background: var(--global-code-bg-color); border-radius: 8px;">
@@ -261,7 +261,7 @@ The following theses were completed during my time as a researcher at the Univer
 - **Evaluation of the multithreaded runtime system Itoyori using Task Bench** — Torben Lahnor (M.Sc., 2025) [[PDF](https://www.uni-kassel.de/eecs/index.php?eID=dumpFile&t=f&f=40727&token=97a2de5fff6672659b6981f0effc47ccb87dae5e)]
 - **Simulation and Evaluation of evolving Workloads** - Kapil Karki (B.Sc., 2025)
 - **Simulating Malleable Job Scheduling Algorithms using Real-World Supercomputer Trace Logs** - Patrick Zojer (B.Sc., 2025) [[PDF](/assets/theses/2025_BSc_Thesis_PatrickZojer.pdf)]
-- **Elastisches Ressourcenmanagement: Vergleich von Asynchronous Many-Task (AMT) und Dynamic Processes with PSets (DPP)** - Nick Bietendorf (B.Sc., 2025)
+- **Elastisches Ressourcenmanagement: Vergleich von Asynchronous Many-Task (AMT) und Dynamic Processes with PSets (DPP)** - Nick Bietendorf (B.Sc., 2025) [[PDF](/assets/theses/2025_BSc_Thesis_NickBietendorf.pdf)]
 - **Evaluation von Gemini–generierten End–To–End und Unit Tests für Webanwendungen** - Marius Tews (B.Sc., 2025)
 
 ### 2024
