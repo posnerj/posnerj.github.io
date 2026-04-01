@@ -171,7 +171,7 @@ The following are initial topic proposals intended to define a research directio
 
 <div style="margin-bottom: 0.75rem; padding: 1rem; background: var(--global-code-bg-color); border-radius: 8px;">
   <strong>3 &nbsp;·&nbsp; Exposé</strong>
-  <p style="margin-top: 0.5rem; margin-bottom: 0;">You write a short exposé (2 pages) covering: problem statement and motivation, objectives and research questions, planned methodology, and a rough timeline. This serves as the basis for the official registration.</p>
+  <p style="margin-top: 0.5rem; margin-bottom: 0;">You write a short exposé (2 pages), covering: problem statement and motivation, objectives and research questions, planned methodology, and a rough timeline. This serves as the basis for the official registration. Please include at least five paper references.</p>
 </div>
 
 <div style="margin-bottom: 0.75rem; padding: 1rem; background: var(--global-code-bg-color); border-radius: 8px;">
