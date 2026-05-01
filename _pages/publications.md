@@ -5,12 +5,12 @@ title: Publications
 sections:
   - bibquery: "@article"
     text: "Journal Articles"
-  - bibquery: "@phdthesis"
-    text: "Dissertation"
   - bibquery: "@inproceedings"
     text: "Conference and Workshop Articles"
   - bibquery: "@conference"
     text: "Posters and Extended Abstracts"
+  - bibquery: "@phdthesis"
+    text: "Dissertation"
 years: [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014]
 social: true
 nav: true
