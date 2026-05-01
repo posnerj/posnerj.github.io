@@ -1,5 +1,14 @@
 # Talk and conference locations with coordinates.
 # "Online" events are excluded from the map.
+- city: "Gleneden Beach"
+  country: "U.S."
+  lat: 44.886
+  lng: -124.020
+  talks:
+    - title: "Salishan Conference on High-Speed Computing"
+      venue: "Salishan Lodge"
+      year: 2026
+      type: "Invited Attendance"
 
 - city: "Darmstadt"
   country: "Germany"
