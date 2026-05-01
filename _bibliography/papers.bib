@@ -1,5 +1,18 @@
 % Encoding: UTF-8
 
+@InProceedings{EduMPIWEPPE26,
+    author = {Anna-Lena Roth and Jonas Posner and Michael Kuhn},
+    title = {{Enabling Interactive Visualization for Near-Real-Time Performance Analysis of MPI Applications}},
+    year = {2026},
+    publisher = {ACM},
+    doi = {10.1145/3777911.3800642},
+    abstract = {Performance analysis is essential for understanding the behavior of parallel applications on High-Performance Computing (HPC) systems, identifying bottlenecks and load imbalances. Traditional analysis workflows are post-mortem: applications are instrumented, performance data is collected at runtime, and insights become available only after execution. This workflow is time-consuming - especially for large-scale Message Passing Interface (MPI) applications (i.e., running on many processes/nodes) requiring repeated analysis after code changes - and demands substantial expertise, posing a steep learning barrier for beginners. To address these challenges, in previous work, we proposed EduMPI Suite, which provides near-real-time visualization of MPI communication in an interactive GUI, making performance analysis immediately accessible in educational settings. While our previous work focused on usability and classroom integration, this paper presents the technical architecture and performance evaluation of EduMPI Suite's measurement and data-management system. We couple EduMPI, an extended Open MPI fork with integrated performance measurement, with EduStore, a time-series database that processes performance-relevant events in near-real-time for visualization in EduMPI GUI. EduMPI leverages a binary-based ingestion layer for high-throughput data insertion, avoiding costly data conversions. Combined with TimescaleDB's optimized time-series processing, this design ensures continuous data availability with negligible delay. On-the-fly aggregation and indexing enable responsive queries and smooth, interactive visualization of communication traces. Our evaluation demonstrates that EduMPI Suite introduces less than 3.8\% runtime overhead while maintaining query latencies below 0.09 s, enabling interactive performance analysis of MPI applications. Usability studies confirm that EduMPI Suite significantly reduces entry barriers for students and improves their ability to identify performance issues over conventional tools.},
+    booktitle = {Companion of the International Conference on Performance Engineering (ICPE) Workshops (WEPPE)},
+    keywords = {conference},
+    altmetric = {false},
+    bibtex_show = {true},
+}
+
 @inproceedings{HPCEduStudy26,
     author = {Anna-Lena Roth and Jonas Posner},
     title = {{An Empirical Analysis of High-Performance Computing Education in Germany}},
@@ -12,7 +25,6 @@
     bibtex_show = {true},
     abstract = {The increasing relevance of High-Performance Computing (HPC) necessitates the systematic integration of parallel programming and performance-oriented competencies into computational science curricula. Ef fective HPC education requires not only theoretical foundations but also hands-on experience with real cluster infrastructures to develop a practical understanding of scalability, efficiency, and architectural distinctions between shared and distributed memory systems. Although curricular initiatives advocate such integration, comprehensive cross-institutional evidence on how HPC education is implemented---and how curricular structures relate to locally available infrastructure---remains limited. To examine this relationship, we conducted a systematic empirical assessment of HPC education across 102 academic institutions in Germany. Based on an analysis of module handbooks and course catalogs, 178 HPC-related courses were identified and evaluated with respect to competency coverage and curricular placement. While 67.6\% of institutions offer at least one HPC-related course, these offerings are predominantly elective modules situated at the master's level, with comparatively limited integration in bachelor's programs. To contextualize these findings, local academic HPC cluster infrastructures were additionally assessed regarding availability, size, and documented accessibility for teaching purposes. Although 62\% of the institutions operate HPC clusters, only 23\% explicitly document their availability for educational use, as infrastructures are primarily reserved for research. Statistical analysis reveals a significant association between restricted teaching access and reduced curricular emphasis on practical competencies, including resource management, cluster usage, debugging in parallel environments, and performance analysis. Overall, the findings indicate a structural imbalance between theoretical instruction and the development of practical HPC competencies within German higher education.},
 }
-
 
 @inproceedings{ItoTaskbench26,
     author = {Torben R. Lahnor and Mia Reitz and Jonas Posner and Patrick Diehl},
