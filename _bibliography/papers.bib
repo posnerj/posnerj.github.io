@@ -11,7 +11,7 @@
     keywords = {conference},
     altmetric = {false},
     bibtex_show = {true},
-}
+    google_scholar_id = {M3ejUd6NZC8C},}
 
 @inproceedings{HPCEduStudy26,
     author = {Anna-Lena Roth and Jonas Posner},
@@ -35,6 +35,7 @@
     preprint = {https://arxiv.org/abs/2601.14608},
     altmetric = {false},
     bibtex_show = {true},
+    google_scholar_id = {YOwf2qJgpHMC},
     abstract = {Asynchronous Many-Task (AMT) runtimes offer a productive alternative to the Message Passing Interface (MPI). However, the diverse AMT landscape makes fair comparisons challenging. Task Bench, proposed by Slaughter et al., addresses this through a parameterized framework for evaluating parallel programming systems. This work integrates two recent cluster AMTs, Itoyori and ItoyoriFBC, into Task Bench for the first time. Itoyori employs a Partitioned Global Address Space (PGAS) model with RDMA-based work stealing, while ItoyoriFBC extends it with future-based synchronization. We compare Task Bench implementations using MPI, HPX, Itoyori, and ItoyoriFBC, evaluating performance and programmer productivity. Each implementation reflects the programming style it naturally supports: Bulk-Synchronous Parallel (BSP) for MPI, parallel loops for HPX, and nested fork-join and future-based cooperation for Itoyori and ItoyoriFBC, respectively. Performance is assessed across compute-bound kernels, weak scaling, and imbalanced and communication-intensive patterns. We use application efficiency, i.e., the percentage of maximum performance achieved, and Minimum Effective Task Granularity (METG), i.e., the smallest task duration before runtime overheads dominate. Productivity is quantified using Lines of Code (LOC) and Number of Library Constructs (NLC). Our results reveal distinct trade-offs. The MPI implementation achieves highest efficiency for regular, communication-light workloads but requires verbose, low-level code. The HPX implementation maintains stable efficiency under load imbalance, yet ranks last in productivity, showing that AMTs do not inherently guarantee improved productivity. The Itoyori implementation achieves highest efficiency in communication-intensive configurations while leading in productivity. The ItoyoriFBC implementation exhibits slightly lower efficiency than Itoyori, though its future-based synchronization offers potential for irregular workloads.},
 }
 
@@ -46,6 +47,7 @@
     doi = {10.1007/s42979-025-04405-3},
     altmetric = {false},
     bibtex_show = {true},
+    google_scholar_id = {KlAtU1dfN6UC},
     abstract = {
 Dynamic resource management enables supercomputing applications to change resource allocations at runtime. This capability promises significant improvements in application efficiency and overall supercomputer utilization. However, adoption is limited by insufficient support in resource managers and programming environments. Furthermore, developing resource-flexible applications introduces significantly higher programming complexity than their static counterparts. While MPI extensions have been proposed for resource flexibility, significant programmability challenges persist. The “Dynamic Processes with PSets (DPP)”design principles define programming model agnostic abstractions for dynamic resource control, and have been prototypically implemented by extending Open MPI and OpenPMIx (termed MPI-DPP). MPI-DPP enables fine-grained process management but relies on low-level message-passing, complicating implementation of dynamic and irregular workloads. Asynchronous Many-Task (AMT) programming offers a compelling alternative. AMT splits computations into fine-grained tasks dynamically scheduled by the runtime system, enabling load balancing and responsiveness to resource changes. Although resource-flexible AMTs remain rare, GLB is a notable exception, offering automatic load balancing and dynamic resource capabilities. However, GLB is built on “APGAS for Java”, which is uncommon in HPC. We present DPP-GLB, a C++ AMT runtime that integrates GLB ’s high-level task abstraction and load balancing with the resource control capabilities of MPI-DPP. We evaluate DPP-GLB, GLB, and MPI-DPP on SuperMUC-NG, analyzing both programming complexity and runtime performance. Results show that GLB is easy to use, featuring built-in load balancing and resource flexibility. MPI-DPP offers superior performance for node changes, albeit at the cost of increased programming complexity. DPP-GLB achieves a balance of low programming complexity and efficient, scalable dynamic resource support.}, }
 
@@ -59,6 +61,7 @@ Dynamic resource management enables supercomputing applications to change resour
     bibtex_show = {true},
     slides = {https://doi.org/10.5281/zenodo.17625006},
     doi = {10.1145/3731599.3767502},
+    google_scholar_id = {ULOm3_A8WrAC},
     abstract = {Asynchronous Many-Task (AMT) runtimes manage parallelism by suspending and migrating tasks between processes, with their state captured in continuations. The efficiency of suspending, migrating, and resuming these continuations is critical to application performance.
 This work directly compares stackful and stackless coroutines as continuation implementations in a cluster environment using RDMA-based coordinated work stealing. We implement and evaluate two functionally equivalent AMT runtimes for a fine-grained, recursive workload: one using traditional stackful coroutines, and another using C++20 stackless coroutines.
 Our results show that both approaches yield nearly identical overall performance for small-state tasks. Stackful coroutines are created 2.4x faster, while stackless coroutines switch context 3.5x faster and have smaller frames. However, the smaller frame size of stackless coroutines does not significantly reduce communication time, which is dominated by network latency. We conclude that both coroutine types are viable, with stackless coroutines offering advantages as task state increases.},}
@@ -83,6 +86,7 @@ Our results show that both approaches yield nearly identical overall performance
     bibtex_show = {true},
     preprint = {https://doi.org/10.48550/arXiv.2602.17318},
     slides = {https://doi.org/10.5281/zenodo.17202606},
+    google_scholar_id = {4TOpqqG69KYC},
     abstract = {Optimizing resource utilization in high-performance computing (HPC) clusters is essential for maximizing both system efficiency and user satisfaction. However, traditional rigid job scheduling often results in underutilized resources and increased job waiting times.
 This work evaluates the benefits of resource elasticity, where the job scheduler dynamically adjusts the resource allocation of malleable jobs at runtime. Using real workload traces from the Cori, Eagle, and Theta supercomputers, we simulate varying proportions (0-100%) of malleable jobs with the ElastiSim software.
 We evaluate five job scheduling strategies, including a novel one that maintains malleable jobs at their preferred resource allocation when possible. Results show that, compared to fully rigid workloads, malleable jobs yield significant improvements across all key metrics. Considering the best-performing scheduling strategy for each supercomputer, job turnaround times decrease by 37-67%, job makespan by 16-65%, job wait times by 73-99%, and node utilization improves by 5-52%. Although improvements vary, gains remain substantial even at 20% malleable jobs.
@@ -97,6 +101,7 @@ This work highlights important correlations between workload characteristics (e.
     bibtex_show = {true},
     doi = {10.1007/978-3-031-97196-9_2},
     slides = {https://doi.org/10.5281/zenodo.14902214},
+    google_scholar_id = {kNdYIx-mwKoC},
     abstract = {
     Dynamic resource management allows programs running on supercomputers to adjust resource allocations at runtime. This dynamism offers potential improvements in both individual program efficiency and overall supercomputer utilization.
 Despite growing interest in recent years, the adoption of dynamic resource management remains limited due to inadequate support from widely used resource managers, such as Slurm, and programming environments, such as MPI. Furthermore, developing flexible programs introduces substantially higher programming complexity compared to static programs.
@@ -127,6 +132,7 @@ In this work, we compare the ``Dynamic Processes with PSets (DPP)'' design princ
     bibtex_show = {true},
     slides = {https://doi.org/10.5281/zenodo.13378632},
     preprint = {https://easychair.org/publications/preprint/7Rwf},
+    google_scholar_id = {3fE2CSJIrl8C},
     abstract = {
     High-performance computing (HPC) clusters are traditionally managed statically, i.e., user jobs maintain a fixed number of computing nodes for their entire execution. This approach becomes inefficient with the increasing prevalence of dynamic and irregular workloads, which have unpredictable computation patterns that result in fluctuating resource needs at runtime. For instance, nodes cannot be released when they are
 not needed, limiting the overall supercomputer performance. However, the realization of jobs that can grow and shrink their number of node allocations at runtime is hampered by a lack of support in both resource managers and programming environments.
@@ -308,7 +314,8 @@ With the advent of exascale computing, issues such as application irregularity a
     booktitle = {EuroHPC Summit Week, PRACEdays},
     year = {2021},
     poster = {https://www.uni-kassel.de/go/EuroHPC20},
-    bibtex_show = {true} }
+    bibtex_show = {true},
+    google_scholar_id = {ufrVoPGSRksC} }
 
 
 @inproceedings{PosnerDMTCPCluster20,
